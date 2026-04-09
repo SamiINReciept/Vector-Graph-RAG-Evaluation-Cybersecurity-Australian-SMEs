@@ -1,0 +1,1237 @@
+{
+  "triples": [
+    {
+      "head": "Australian Small Businesses (SMBs)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack of funds",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Our study found the lack of funds to be the biggest hindrance to cybersecurity, along with a lack of knowledge on where to start implementing good security practices.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Australian Small Businesses (SMBs)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack of knowledge on where to start",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Our study found the lack of funds to be the biggest hindrance to cybersecurity, along with a lack of knowledge on where to start implementing good security practices.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack of familiarity with relevant regulations and frameworks",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "SMBs also lacked familiarity with relevant regulations and frameworks.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Inadequate cybersecurity strategies",
+      "head_type": "Vulnerability",
+      "relation": "LEADS_TO",
+      "tail": "Business insolvency",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Inadequate cybersecurity strategies among small-to-medium sized businesses (SMBs) make them vulnerable to reputational damage as well as financial and legal consequences, risking business insolvency.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Cybercriminals",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "SMBs",
+      "tail_type": "Organization",
+      "supporting_sentence": "Cybercriminals target SMBs as easier targets and exploit them as weak links in the supply chain.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Cybercriminals",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Supply chain",
+      "tail_type": "Other",
+      "supporting_sentence": "Cybercriminals target SMBs as easier targets and exploit them as weak links in the supply chain.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Phishing/targeted malicious emails",
+      "head_type": "ThreatOrAttack",
+      "relation": "ARE",
+      "tail": "Top concern of SMBs",
+      "tail_type": "Other",
+      "supporting_sentence": "SMBs identified phishing and targeted malicious emails as the top concern, followed by data loss or theft of confidential information, ransomware, and business email compromise.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack cybersecurity monitoring tools and capabilities",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "This study also found that a significant number of SMBs lack cybersecurity monitoring tools and capabilities.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Lack of monitoring capabilities",
+      "head_type": "Vulnerability",
+      "relation": "LEADS_TO",
+      "tail": "Vulnerable to undetected attacks (APTs)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "leaving them vulnerable to undetected attacks, including Advanced Persistent Threats (APTs).",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs that experienced cyber-attacks",
+      "head_type": "Organization",
+      "relation": "REPORTED",
+      "tail": "Phishing (most prevalent type)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Among SMBs that experienced cyber-attacks, phishing was the most prevalent type, followed by ransomware and malware infections.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "UNDERESTIMATE",
+      "tail": "Data breaches via third-party suppliers",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "SMBs underestimate the risks of brute force attacks, payment redirection fraud, and accidental disclosure despite them occurring... They are also over-estimating the risk of unauthorised access by internal users.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "External attackers (cyber criminals)",
+      "head_type": "ThreatOrAttack",
+      "relation": "ARE",
+      "tail": "Most likely threat actor to attack businesses",
+      "tail_type": "Other",
+      "supporting_sentence": "Fig. 8 indicates that SMBs perceive cyber criminals as the most likely threat actor to attack their businesses.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Health Care and Social Assistance industry (SMBs)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Unaware of the NDB legislation (67%)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "In the Health Care and Social Assistance industry, a significant majority of SMBs (67%) were unaware of the NDB legislation despite it being applicable to them.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Lack of awareness of NDB legislation",
+      "head_type": "Vulnerability",
+      "relation": "LEADS_TO",
+      "tail": "Compliance risks",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "These findings suggest that a significant proportion of SMBs are not adequately informed about the legal requirements imposed on them, potentially exposing them to compliance risks.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "NIST CSF",
+      "head_type": "PolicyOrRegulation",
+      "relation": "IS",
+      "tail": "Most known cybersecurity framework among SMB respondents (32%)",
+      "tail_type": "Other",
+      "supporting_sentence": "NIST CSF is the most known cybersecurity framework among SMB respondents (32 %).",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "17% of SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Did not know about any cybersecurity frameworks",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Our results indicated that 17 % of SMBs surveyed did not know about any of the cybersecurity frameworks.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Adopting cybersecurity frameworks (NIST CSF, Essential Eight, ISO 27001)",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "SMBs should adopt these frameworks to guide their cybersecurity implementations.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "47% of SMB respondents",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Felt there isn’t enough information on cybersecurity",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "The survey results indicate that 47 % of SMB respondents felt there isn’t enough information on cybersecurity.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "RELIES_ON",
+      "tail": "Google search (most commonly mentioned source)",
+      "tail_type": "Other",
+      "supporting_sentence": "the most commonly mentioned source is Google search.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Local universities",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Underutilised as sources of cyber information",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Local universities are underutilised as sources of cyber information, despite their expertise and resources.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "66% of SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lacked a documented plan for information security incidents",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "66 % of SMBs surveyed lacked a documented plan for information security incidents.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "IT asset inventory",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Risk of unauthorised access and data breaches",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "The absence of an IT asset inventory hinders efficient management and protection of resources, increasing the risk of unauthorised access and data breaches.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "72% of SMBs",
+      "head_type": "Organization",
+      "relation": "PERFORM",
+      "tail": "Regular full backups of important data",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The majority of SMBs (72 %) regularly make full backups of important data, demonstrating preparedness.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Data backups",
+      "head_type": "ControlOrMeasure",
+      "relation": "VULNERABILITY",
+      "tail": "Lack of periodic testing",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Testing of backups is lacking, with 69 % of SMBs not periodically testing functionality.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "ASD’s Essential Eight Mitigation Strategies",
+      "head_type": "PolicyOrRegulation",
+      "relation": "MITIGATES",
+      "tail": "Cost of responding to a cyber security incident",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "implementing the Essential Eight Mitigation Strategies can be more cost-effective for SMBs in terms of time, money and effort than having to respond to a cyber security incident.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "SMBs that outsource (IT security)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Gaps in the owner’s cyber security knowledge",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Outsourcing may lead to gaps in the owner’s cyber security knowledge about which security measures are being implemented to protect their business.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "SMBs that outsource (IT security)",
+      "head_type": "Organization",
+      "relation": "MORE_LIKELY",
+      "tail": "Conduct daily backups",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "SMBs that outsource are more likely to conduct daily backups of their information.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Automation of backups",
+      "head_type": "ControlOrMeasure",
+      "relation": "LEADS_TO",
+      "tail": "Quicker recovery after ransomware cyber incidents",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "By making it clear to SMBs that backups can be automated... an SMB’s ability to more quickly recover after ransomware cyber incidents can be substantially improved.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Malware, Phishing and Ransomware",
+      "head_type": "ThreatOrAttack",
+      "relation": "ARE",
+      "tail": "Most commonly understood cyber security risks (among SMBs)",
+      "tail_type": "Other",
+      "supporting_sentence": "Data shows that Malware, Phishing and Ransomware are the most commonly understood cyber security risks.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Australian SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Knowledge of cyber security risks is low",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Overall, knowledge of cyber security risks among Australian SMBs is low.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Cyber security guidance",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Easy-to-understand, principles-based language",
+      "tail_type": "Other",
+      "supporting_sentence": "This demonstrates the importance of cyber security guidance that contains easy-to-understand, principles-based language that SMBs can action effectively.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "ACSC technical advice",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Prioritisation (for SMBs)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Technical advice must be prioritised so that Australian SMBs know which cyber security practices to implement first for best results.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Guidance for Australian SMBs",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Effective, low cost tips (in time and money)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Guidance for Australian SMBs must be comprised of effective, low cost tips (in both time and money) that are easy to implement.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Cyber Wardens program",
+      "head_type": "ControlOrMeasure",
+      "relation": "AIMS_TO",
+      "tail": "Train 50,000 Cyber Wardens across Australia over the next three years",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Since the launch in November 2023, we have made a strong start to our aim of training 50,000 Cyber Wardens across Australia over the next three years.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "Suspicious SMS, email or phone call",
+      "head_type": "ThreatOrAttack",
+      "relation": "ARE",
+      "tail": "Most common cyber threat (affecting 70% of SMBs)",
+      "tail_type": "Other",
+      "supporting_sentence": "7 in 10 (70%) have received a suspicious SMS, email or phone call, making this by far the most common cyber threat.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "Small business owners/CEOs and employees",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Underestimate their vulnerability (only 35% feel vulnerable)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Only a third (35%) of small business owners/CEOs and employees feel vulnerable to attack due to being a small business.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "Small businesses",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Rely heavily on security of platforms they use (assuming ‘secure-by-design’)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "many small businesses are relying heavily on the security of platforms they use every day assuming a ‘secure-by-design’ software ecosystem already protects them.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "Human error",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "Vast majority of cyber attacks in Australia",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Research suggests the vast majority of cyber attacks in Australia involve human error.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "Multi-factor authentication (MFA)",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Cyber criminals accessing online accounts and applications",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "One of the most effective ways to protect online accounts and applications from cyber criminals is through multi-factor authentication (MFA).",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "Fewer than 1 in 4 small businesses (24%)",
+      "head_type": "Organization",
+      "relation": "HAVE",
+      "tail": "Specialised cyber insurance protection",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Fewer than 1 in 4 (24%) small businesses have specialised cyber insurance protection despite a 23% increase in reported cyber attacks in the past 12 months.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "Small businesses",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Intimidated by technical jargon and overwhelmed by steps to take",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "They feel intimidated by technical jargon, overwhelmed by not knowing what steps to take, and doubtful that they have the time, resources and digital literacy to protect their businesses.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "86% of small businesses",
+      "head_type": "Organization",
+      "relation": "INTERESTED_IN",
+      "tail": "Program that simplifies cyber security",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Almost nine in ten (86%) expressed a keen interest in a program that simplifies cyber security and makes it achievable for businesses of all sizes.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "Simplifying cyber security (into bite-sized pieces)",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Cyber security being placed in the ‘too hard basket’",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Simplifying the way we address cyber security is key to taking it out of the ‘too hard basket’ and making it achievable and actionable for every small business.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "SMEs (Australia and New Zealand)",
+      "head_type": "Organization",
+      "relation": "TARGETS",
+      "tail": "Cybercrime (at least once in every 10 minutes in Australia)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "the Australia Cybersecurity Centre (2021) reported that an SME related cybercrime was being reported at least once in every 10 minutes.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "SME related cybercrime",
+      "head_type": "ThreatOrAttack",
+      "relation": "LEADS_TO",
+      "tail": "$300 million annual loss (Australia)",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "SME related cybercrime was being reported at least once in every 10 minutes with $300 million annual loss.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "Online attacks",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Small businesses (30% in New Zealand)",
+      "tail_type": "Organization",
+      "supporting_sentence": "In New Zealand, 30% of online attacks are targeted at small businesses.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "SMEs",
+      "head_type": "Organization",
+      "relation": "ARE",
+      "tail": "Gateway to larger organizations or targeted high-profile victims",
+      "tail_type": "Other",
+      "supporting_sentence": "SMEs are the highly important entities to threat actors for two reasons... and because SMEs are the gateway to the larger organizations or targeted high-profile victims.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "Cyber-attacks",
+      "head_type": "ThreatOrAttack",
+      "relation": "NEGATIVELY_IMPACT",
+      "tail": "Revenue (Asia Pacific region)",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "60% of SMEs’ have suffered from these incidents and the cyber-attacks have negatively impacted their revenue.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "Malware attacks",
+      "head_type": "ThreatOrAttack",
+      "relation": "ARE",
+      "tail": "The leading threat (for APJC SMEs)",
+      "tail_type": "Other",
+      "supporting_sentence": "Malware attacks were the leading threat and affected 85% of SMEs.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "Loss or breach of customer data",
+      "head_type": "ImpactOrOutcome",
+      "relation": "IS_A_RESULT_OF",
+      "tail": "Cyber-attacks (Asia Pacific region)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "The following are the impacts of the attacks within the Asia Pacific region (CISCO, 2021): Loss or breach of customer data, Loss or breach of internal emails.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "Australian SME employees and owners",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack the awareness of common threats",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Studies show that most Australian SME employees and owners lack the awareness of common threats such as Malware, Phishing, Ransomware and Trojan.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "50% of SMEs",
+      "head_type": "Organization",
+      "relation": "ARE_RATED",
+      "tail": "Average or below average in cyber security understanding",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "More than 50% of SMEs have been rated as “average” or “below average” in terms of their understanding of cyber security.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "ASD’s Essential Eight (frameworks)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "SHOULD_BECOME",
+      "tail": "Baseline for SMEs (for education)",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "they should find ways for them to become the baseline for SMEs so that they are educated to face the future cyber threats.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "SMEs",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Investment in dedicated IT support or outsourcing",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "We recommend that SMEs invest in dedicated IT support or outsource to relevant organizations to help provide preventative and protective infrastructure against cyber threats.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "ASD’s ACSC",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Providing cyber security awareness training to SMEs",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "we recommend that government organizations such as CERT NZ, and Australian Cybersecurity Centre provide cyber security awareness training to SMEs.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "Small size and limited financial resources (SMEs)",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "Susceptibility to cyber threats",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "This susceptibility arises from a combination of factors including a shortage of cybersecurity knowledge and resources... limited financial resources, and the absence of resident IT staff.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "AI/ML/LLMs",
+      "head_type": "Other",
+      "relation": "MITIGATES",
+      "tail": "Increased vulnerability of Australian SMEs to cyber threats",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Embracing transformative technologies such as Artificial Intelligence (AI), Machine Learning (ML) and Large Language Models (LLMs) can potentially strengthen cyber security policies for Australian SMEs.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "Prior research (LLMs)",
+      "head_type": "Other",
+      "relation": "FOCUSED_ON",
+      "tail": "Large corporations",
+      "tail_type": "Organization",
+      "supporting_sentence": "Prior research has predominantly focused on large corporations, while the unique challenges and needs of SMEs have received less attention.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "GPT-4 model",
+      "head_type": "Other",
+      "relation": "IS",
+      "tail": "Most potent AI model for formulating cyber security policies for SMEs",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The GPT-4 model was identified as the most potent AI model for formulating cyber security policies for SMEs.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "LLMs",
+      "head_type": "Other",
+      "relation": "VULNERABILITY",
+      "tail": "Concerns regarding data privacy and ethics",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "However, concerns regarding data privacy and ethics were also raised, advocating for a nuanced application of AI that balances effectiveness with ethical standards.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "Cybercrime",
+      "head_type": "ThreatOrAttack",
+      "relation": "LEADS_TO",
+      "tail": "Financial losses from fraud and ransoms",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "There are direct and indirect costs to cybercrime victims including: Financial losses from fraud and ransoms.",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "SMEs",
+      "head_type": "Organization",
+      "relation": "TARGETS",
+      "tail": "Cyber-attacks (increasingly in Australia)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Small to Medium Enterprises (SMEs) and their supply chains are increasingly becoming the target for cyber-attacks in Australia.",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "Cost to implement cyber security",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "SME’s cannot afford cyber resilience",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Alex Heidenreich from Diamond Cyber stated that “SME’s are starting to ask for cyber resilience and literally cannot afford it”.",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "Cyber security policy and guidelines in Australia",
+      "head_type": "PolicyOrRegulation",
+      "relation": "VULNERABILITY",
+      "tail": "Complicated and confusing",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Cyber security policy and guidelines in Australia are complicated and confusing; making templated policies and procedures available freely or cheaply to SME’s would assist in helping them in navigating the mine-field of cyber security information.",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "Templated policies and procedures",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Complexity of cyber security information (for SMEs)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "making templated policies and procedures available freely or cheaply to SME’s would assist in helping them in navigating the mine-field of cyber security information.",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "ASD Essential 8 and ASD Top 4",
+      "head_type": "PolicyOrRegulation",
+      "relation": "CAUSES",
+      "tail": "Confusion for SMEs (re: guidance)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "With the Defence Industry Security Program (DISP), Australian Cyber Security Centre (ACSC), the Essential 8 and Australian Signals Directorate (ASD) Top 4 being just a portion of the governing bodies and information surrounding cyber security, SME’s reported confusion.",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "SMEs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "75% believe they are not targets of cybercrime",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "a recent survey by Kasperksy Labs reports that 75% of SMEs believing they are not targets of cybercrime.",
+      "source_document": "Small to Medium Enterprise Cyber Security Awareness_ An Initial S.pdf"
+    },
+    {
+      "head": "Cyber-attacks (in 2012)",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "SMEs (31% of all attacks)",
+      "tail_type": "Organization",
+      "supporting_sentence": "The largest growth area for targeted cyber attacks in 2012 was SMEs; 31 percent of all attacks targeted them.",
+      "source_document": "Small to Medium Enterprise Cyber Security Awareness_ An Initial S.pdf"
+    },
+    {
+      "head": "SMEs (Western Australia)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Cannot afford professional IT security services",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Many SMEs simply cannot afford these professional services due to fiscal and time constraints.",
+      "source_document": "Small to Medium Enterprise Cyber Security Awareness_ An Initial S.pdf"
+    },
+    {
+      "head": "94% of SMEs (surveyed in WA)",
+      "head_type": "Organization",
+      "relation": "ARE_USING",
+      "tail": "Unprotected devices",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "This will significantly reduce the risk to the 94% of SMEs who are indicate they are currently using unprotected devices.",
+      "source_document": "Small to Medium Enterprise Cyber Security Awareness_ An Initial S.pdf"
+    },
+    {
+      "head": "Wireless transmission (for business data)",
+      "head_type": "Other",
+      "relation": "VULNERABILITY",
+      "tail": "Susceptible to interception (regardless of technology)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "All wireless transmission is susceptible to interception regardless of technology.",
+      "source_document": "Small to Medium Enterprise Cyber Security Awareness_ An Initial S.pdf"
+    },
+    {
+      "head": "Antivirus countermeasures and regular patching",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Risk to SMEs using unprotected devices",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "The content of the workshop will be as follows. First, the need to get antivirus countermeasures installed on mobile platforms owned by these SMEs and at the same time reinforcing the messaging about regular patching and updates. This will significantly reduce the risk to the 94% of SMEs who are indicate they are currently using unprotected devices.",
+      "source_document": "Small to Medium Enterprise Cyber Security Awareness_ An Initial S.pdf"
+    },
+    {
+      "head": "Identity theft",
+      "head_type": "ThreatOrAttack",
+      "relation": "IS",
+      "tail": "Largest and fastest growing crime type in the world",
+      "tail_type": "Other",
+      "supporting_sentence": "Given that identity theft is the largest and fastest growing crime types in the world this should be considered by SMEs concerned with protection of customers private details.",
+      "source_document": "Small to Medium Enterprise Cyber Security Awareness_ An Initial S.pdf"
+    },
+    {
+      "head": "SMEs (Australian)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Low adoption of cloud computing (less than 40%)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Large Australian enterprises adopt more than 70% of commercial payment cloud computing services; however, the adoption of SMEs is less than 40% due to various challenges.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Security challenges (in cloud computing)",
+      "head_type": "Vulnerability",
+      "relation": "DISCOURAGES",
+      "tail": "SMEs to adopt cloud computing",
+      "tail_type": "Organization",
+      "supporting_sentence": "Recent studies in Australia on SMEs cloud computing adoption indicate that security challenges are one of the critical factors that discourages SMEs to adopt cloud computing.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Lack of competence (in employees)",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "Vulnerability to social engineering attacks like phishing",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "a lack of competence can make any enterprise vulnerable to social engineering attacks like phishing.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Micro and small enterprises (Australian)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Weak understanding of cybersecurity and control methods (in cloud context)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Micro and small enterprises in Australia have a somewhat weak understanding of cybersecurity, control methods and security technologies in a cloud context.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Medium sized enterprises",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "More than twice as likely to have a malicious insider attack (than micro businesses)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Medium sized enterprises are more than twice as likely to have a malicious insider attack when compared to a micro business.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Medium sized firms",
+      "head_type": "Organization",
+      "relation": "REPORTED",
+      "tail": "Better security practices and techniques on data encryption (than micro firms)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "SMEs reported better security practices and techniques on data encryption, security information event management, trained cloud security professionals, and vulnerability assessment than the micro firms.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Micro sized enterprises",
+      "head_type": "Organization",
+      "relation": "EXHIBIT",
+      "tail": "Higher levels of data leakage prevention (compared to small and medium enterprises)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "micro sized enterprises exhibit higher levels of data leakage prevention compared to small and medium sized enterprises.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Sensitive data (in SMEs)",
+      "head_type": "AssetOrData",
+      "relation": "VULNERABILITY",
+      "tail": "Freely accessible due to no encryption or access control measures",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "An investigation revealed that ‘sensitive data was freely accessible due to seemingly no encryption or access control measures being in place’.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Australian SMEs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack dedicated cybersecurity resources (funds, time, expertise)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Micro enterprises often lack dedicated cybersecurity resources, lack funds, time and expertise to protect against cyber-threats.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Cyber threat actors",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "SMEs (supply chains)",
+      "tail_type": "Organization",
+      "supporting_sentence": "SMEs and their supply chains are increasingly becoming the target for cyber-attacks in Australia.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "SMEs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Prioritise business growth over security measures",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "SMEs are found to prioritise business growth over security measures, lack internal cyber security policies, and display a unique cyber security culture.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "Australian SMBs",
+      "head_type": "Organization",
+      "relation": "LOCATED_IN",
+      "tail": "Australian economy (97% of all businesses)",
+      "tail_type": "Other",
+      "supporting_sentence": "As at 30 June 2022, Western Australia (WA) had 235,050 small businesses which constituted 97 % of all businesses in WA.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack cybersecurity knowledge (despite general awareness)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "the Australian study identifies a pervasive lack of cyber security knowledge among SMBs, despite a general awareness of its importance.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "NIST CSF Detect Function practices",
+      "head_type": "PolicyOrRegulation",
+      "relation": "VULNERABILITY",
+      "tail": "Lack of adequate monitoring tools and practices (in SMBs)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "The lack of adequate monitoring tools and practices leaves SMBs vulnerable to undetected attacks.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "ASD Essential Eight",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "NIST CSF and ISO 27001 (as popular frameworks)",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "Prominent examples of such frameworks include the International Organisation for Standardisation (ISO) 27001... the NIST CSF... and the Australian Signals Directorate (ASD) Essential Eight.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "ASD Essential Eight",
+      "head_type": "PolicyOrRegulation",
+      "relation": "VULNERABILITY",
+      "tail": "Not popularly known among SMBs",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "one would expect the ASD Essential 8 to be more popularly known among SMBs as it is a simple framework and baseline recommended by the Australian government.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "NIST Identify Function (CSF)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Understanding and prioritising critical assets, systems, and data",
+      "tail_type": "AssetOrData",
+      "supporting_sentence": "The NIST CSF’s Identify function is crucial for establishing a comprehensive cybersecurity risk management strategy. It involves understanding and prioritising critical assets, systems, and data.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Encryption",
+      "head_type": "ControlOrMeasure",
+      "relation": "VULNERABILITY",
+      "tail": "Not used by 48% of SMBs",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "About 48 % of SMBs surveyed did not use encryption to protect sensitive business information.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Targeted educational initiatives (for compliance)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Implement targeted educational initiatives to increase SMBs’ understanding of cybersecurity legislation.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Multi-factor authentication (MFA)",
+      "head_type": "ControlOrMeasure",
+      "relation": "IS",
+      "tail": "Recommended basic security measure (by ACSC)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "As a starting point, we recommend the following three measures: Turn on multi-factor authentication.",
+      "source_document": "ACSC_Small_Business_Cyber_Security_Guide_V6.pdf"
+    },
+    {
+      "head": "Medium sized businesses",
+      "head_type": "Organization",
+      "relation": "MORE_LIKELY",
+      "tail": "Implement a majority of Essential Eight strategies (44%)",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "medium sized businesses were more likely to implement a majority of strategies (44 per cent) compared to businesses with fewer than 20 employees (30 per cent).",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "SMBs that adopt a DIY approach (to IT security)",
+      "head_type": "Organization",
+      "relation": "IMPLEMENT",
+      "tail": "One to five of the Essential Eight Mitigation Strategies (mostly)",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "Of SMBs that adopt a DIY approach, most implement one to five of the Essential Eight Mitigation Strategies.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "ASD Essential Eight",
+      "head_type": "PolicyOrRegulation",
+      "relation": "PROVIDES",
+      "tail": "A useful benchmark to measure the cyber security posture",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "the Essential Eight Mitigation Strategies... provide a useful benchmark to measure the cyber security posture of Australian industry.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Lack of security knowledge and resources (SMEs)",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "Struggle to navigate complex socio-technical setting autonomously",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "SMEs often lack cyber security experts and have a complex socio-technical setting that they struggle to navigate autonomously.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "Larger organisations",
+      "head_type": "Organization",
+      "relation": "HAS_VESTED_INTEREST_IN",
+      "tail": "Bolstering the cybersecurity capabilities of their SMB suppliers",
+      "tail_type": "Organization",
+      "supporting_sentence": "it is in the best interest of large enterprises to bolster the cybersecurity capabilities of their SMB suppliers and contractors.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Vulnerabilities in SMB partners’ posture",
+      "head_type": "Vulnerability",
+      "relation": "DIRECTLY_IMPACT",
+      "tail": "Security of the larger organisation",
+      "tail_type": "Organization",
+      "supporting_sentence": "Vulnerabilities in the cybersecurity posture of these SMB partners can directly impact the security of the larger organisation.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Small businesses",
+      "head_type": "Organization",
+      "relation": "HAVE",
+      "tail": "Low confidence in their ability to identify and respond to cyber threats",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Small businesses in the Passive & Foundational segment... have low confidence in their ability to identify and respond to cyber threats.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "Cybersecurity awareness training",
+      "head_type": "ControlOrMeasure",
+      "relation": "LEADS_TO",
+      "tail": "Enhanced job security and better client relationships",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Enhanced cyber security not only safeguards the business but also enhances job security, fosters better client relationships, and instils peace of mind among stakeholders.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Underestimate the recovery period from a cyber incident",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Businesses need to better understand the risk and impact of a cyber incident and to not underestimate their recovery period from a cyber incident.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Australian SMBs",
+      "head_type": "Organization",
+      "relation": "LOCATED_IN",
+      "tail": "Across states and territories (diverse industry sectors)",
+      "tail_type": "Other",
+      "supporting_sentence": "Australian SMBs across states and territories, industry sectors, and business sizes have varying levels of cyber security understanding.",
+      "source_document": "129.pdf"
+    },
+    {
+      "head": "97% of respondents (ACSC Survey)",
+      "head_type": "Organization",
+      "relation": "VIEW",
+      "tail": "Cyber security as important to their business",
+      "tail_type": "Other",
+      "supporting_sentence": "The majority (97 per cent) of respondents view cyber security as important to their business, higher than the proportion that view physical security as important (92 per cent).",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Cyber risks and behaviours",
+      "head_type": "ThreatOrAttack",
+      "relation": "REQUIRES",
+      "tail": "Continual monitoring",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Cyber risks and cyber security best practices change over time, so learning must be ongoing with cyber risks and behaviours continually monitored.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack of planning for and responding to cyber incidents",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "a gap in planning for, and responding to, cyber incidents.",
+      "source_document": "120.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "RELIES_ON",
+      "tail": "IT service providers (valued source of cyber information)",
+      "tail_type": "Organization",
+      "supporting_sentence": "IT service providers are also valued as a source of cyber information, indicating their crucial role in supporting SMBs.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "ASD Essential Eight",
+      "head_type": "PolicyOrRegulation",
+      "relation": "IS",
+      "tail": "Baseline recommended by the Australian government",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "one would expect the ASD Essential 8 to be more popularly known among SMBs as it is a simple framework and baseline recommended by the Australian government.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Malicious insiders",
+      "head_type": "ThreatOrAttack",
+      "relation": "ARE_A_MAJOR_ISSUE_FOR",
+      "tail": "Any organisation (including SMEs)",
+      "tail_type": "Organization",
+      "supporting_sentence": "Insider threats are a major security issue for any organisation.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Micro and small firms",
+      "head_type": "Organization",
+      "relation": "TYPICALLY_DEPEND_ON",
+      "tail": "Third parties (for cybersecurity)",
+      "tail_type": "Organization",
+      "supporting_sentence": "Micro and small enterprises in Australia... typically depend on third parties.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Cyber security threats",
+      "head_type": "ThreatOrAttack",
+      "relation": "LEADS_TO",
+      "tail": "Threatening SMEs' existence, profitability, and critical contributions to the economy",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "These SMEs face cybersecurity threats every day that threaten their existence, profitability, and critical contributions to the economy.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "Cyber attacks",
+      "head_type": "ThreatOrAttack",
+      "relation": "DESTROY",
+      "tail": "Businesses financially (loss of bank account details)",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "The effects of cyber attack can destroy businesses financially through loss of bank account details as well as materially through loss of intellectual property or customer data.",
+      "source_document": "Small to Medium Enterprise Cyber Security Awareness_ An Initial S.pdf"
+    },
+    {
+      "head": "ASD Essential Eight Mitigation Strategies",
+      "head_type": "PolicyOrRegulation",
+      "relation": "APPLIES_TO",
+      "tail": "Medium sized businesses (more likely to implement)",
+      "tail_type": "Organization",
+      "supporting_sentence": "medium sized businesses were more likely to implement a majority of strategies (44 per cent) compared to businesses with fewer than 20 employees (30 per cent).",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "SMBs (Western Australia)",
+      "head_type": "Organization",
+      "relation": "LOCATED_IN",
+      "tail": "Western Australia (WA)",
+      "tail_type": "Other",
+      "supporting_sentence": "While the survey-based study was on Western Australian SMBs, the results are of more general and wider interest.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs (Western Australia)",
+      "head_type": "Organization",
+      "relation": "COMPRISE",
+      "tail": "97% of all businesses in WA",
+      "tail_type": "Other",
+      "supporting_sentence": "Western Australia (WA) had 235,050 small businesses which constituted 97 % of all businesses in WA.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "ASD's ACSC",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Development of technical guidance materials tailored to Australian SMBs",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Data from the Survey informed the development of the ACSC’s technical guidance materials tailored to the needs and capabilities of Australian SMBs.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "AI/ML/LLMs",
+      "head_type": "Other",
+      "relation": "HAVE_POTENTIAL",
+      "tail": "To bolster cyber security efforts",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Their ability to execute a broad range of tasks typically demanding human intelligence could bolster cyber security efforts.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "SMB owners",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "May think they are doing enough, but fail to identify weaknesses",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "SMB owners may think they are doing enough, but fail to identify weaknesses in their security practices.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Cybersecurity awareness programs",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Collaboration and partnerships (from larger organisations)",
+      "tail_type": "Organization",
+      "supporting_sentence": "Larger organisations can collaborate with SMBs through mentorship programs or partnerships to foster knowledge sharing and support in meeting cybersecurity requirements.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "APT attacks (Advanced Persistent Threats)",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "SMBs (undetected)",
+      "tail_type": "Organization",
+      "supporting_sentence": "leaving them vulnerable to undetected attacks, including Advanced Persistent Threats (APTs).",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Small businesses (Australia)",
+      "head_type": "Organization",
+      "relation": "CONTRIBUTE",
+      "tail": "$418 billion to Australia’s GDP",
+      "tail_type": "Other",
+      "supporting_sentence": "Small business is our largest employer, representing 5 million people and contributing $418 billion to Australia’s GDP.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "Offsite backups",
+      "head_type": "ControlOrMeasure",
+      "relation": "IS_RELATED_TO",
+      "tail": "Industry category (statistically significant relationship)",
+      "tail_type": "Other",
+      "supporting_sentence": "Industry category shows a statistically significant relationship (p = 0.048) with offsite backup practices.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs (Western Australia)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Unaware of website hacking (due to lack of monitoring)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "No incidents of website hacking or unauthorised access/modification by internal users were reported. However, this absence may be due to the lack of comprehensive monitoring and detection mechanisms within SMBs.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "ACSC Cyber Threat Report 2023",
+      "head_type": "PolicyOrRegulation",
+      "relation": "HIGHLIGHTS",
+      "tail": "SMBs continue to be victims of cyberattacks (62%)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "SMBs continue to be victims of cyberattacks, with 62 % experiencing such incidents (2023 ASD Cyber Threat Report 2023; Cyber Security and Australian Small Businesses 2019).",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Cybersecurity risk",
+      "head_type": "Other",
+      "relation": "DOES_NOT_SIGNIFICANTLY_IMPACT",
+      "tail": "Organisational size, industry sector, or revenue level (SMBs' perception)",
+      "tail_type": "Other",
+      "supporting_sentence": "factors such as organisational size, industry sector, and revenue level did not significantly impact SMBs’ perception of vulnerability to cyber threats.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Non-employing SMBs (Sole traders)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Diminished perceived need to prioritise cybersecurity concerns",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "non-employing SMBs possess relatively limited IT systems and network infrastructure, thereby potentially diminishing their perceived need to prioritise cybersecurity concerns.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "APT attacks",
+      "head_type": "ThreatOrAttack",
+      "relation": "REQUIRES",
+      "tail": "Enhancing monitoring capabilities (in SMBs)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Enhancing monitoring capabilities within SMBs is crucial to bolster their cybersecurity posture, detect and mitigate threats in a timely manner, and protect sensitive information.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack formalised policies and procedures (for information security)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "A significant portion of SMBs lacks formalised documentation for information security policies.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Cyber security challenges (in SMEs)",
+      "head_type": "Vulnerability",
+      "relation": "INCLUDES",
+      "tail": "Budget constraints",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Previous research found common challenges to include not having the in-house expertise, budget constraints.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "ASD's ACSC Small Business Survey",
+      "head_type": "PolicyOrRegulation",
+      "relation": "COLLECTED_RESPONSES",
+      "tail": "From June 2019 to September 2019 (1763 responses)",
+      "tail_type": "Other",
+      "supporting_sentence": "The Survey collected responses from June 2019 to September 2019 and collected 1763 responses.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Sole traders (97%)",
+      "head_type": "Organization",
+      "relation": "ADOPT",
+      "tail": "DIY approach (to IT security management)",
+      "tail_type": "Other",
+      "supporting_sentence": "97 per cent of sole traders adopt a DIY approach.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Employees and owners (SMEs)",
+      "head_type": "Organization",
+      "relation": "ARE",
+      "tail": "Main actors within the critical steps in recognizing, responding to and recovering from cyber-attack",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "it is vital for staff and owners to understand the security risks as they are the main actors within the critical steps in recognizing, responding to and recovering from cyber-attack.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    },
+    {
+      "head": "Micro sized enterprises",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Especially vulnerable to highly adaptable and cunning cybercriminals",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "This makes them especially vulnerable to highly adaptable and cunning cybercriminals who look to exploit vulnerable micro businesses.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Micro, small, and medium enterprises",
+      "head_type": "Organization",
+      "relation": "FACE",
+      "tail": "Similar kinds of cybersecurity threats and vulnerabilities (in cloud context)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Results indicate that micro, small and medium sized enterprises face similar kinds of cybersecurity threats and vulnerabilities.",
+      "source_document": "paper_84.pdf"
+    },
+    {
+      "head": "Cybercriminals",
+      "head_type": "ThreatOrAttack",
+      "relation": "ARE_INCREASINGLY",
+      "tail": "Targeting Australian small businesses",
+      "tail_type": "Organization",
+      "supporting_sentence": "cyber criminals are increasingly targeting Australian small businesses.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "SMBs (WA)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Low adoption of Essential Eight Mitigation Strategies (if outsourcing)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Data shows that for many SMBs opting to outsource, their outsourced provider did not necessarily implement all of the Essential Eight Mitigation Strategies.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "SMEs",
+      "head_type": "Organization",
+      "relation": "COMPRISE",
+      "tail": "99.8% of all enterprises in Australia",
+      "tail_type": "Other",
+      "supporting_sentence": "In Australia, 99.8% of all enterprises are SMEs and they employ more than 7.6 million people.",
+      "source_document": "F11. CITRENZ_2022_paper_3899.pdf"
+    }
+  ]
+}

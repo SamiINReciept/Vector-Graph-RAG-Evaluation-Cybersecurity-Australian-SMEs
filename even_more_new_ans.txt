@@ -1,0 +1,337 @@
+outputs from llama:
+[INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+
+=== GRAPH RAG RESULT ===
+Q: Which controls help Australian small businesses mitigate phishing or scam-related cyber threats?
+
+Intent: GraphIntent(head_type='ControlOrMeasure', tail_type='ThreatOrAttack', relations=['MITIGATES'], head_keywords=[], tail_keywords=['phishing', 'scam'])
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE ($head_type IS NULL OR h.type = $head_type)
+  AND ($tail_type IS NULL OR t.type = $tail_type)
+  AND (size($relations) = 0 OR r.type IN $relations)
+  AND (
+        size($head_keywords) = 0
+        OR ANY(kw IN $head_keywords WHERE toLower(h.name) CONTAINS toLower(kw))
+      )
+  AND (
+        size($tail_keywords) = 0
+        OR ANY(kw IN $tail_keywords WHERE toLower(t.name) CONTAINS toLower(kw))
+      )
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT $limit
+
+Facts used:
+  - SMBs that experienced cyber-attacks --RELATED_TO--> Phishing (most prevalent type)
+  - Lack of competence (in employees) --CAUSES--> Vulnerability to social engineering attacks like phishing
+
+Answer:
+ Australian small businesses can mitigate phishing or scam-related cyber threats by addressing the lack of competence in their employees. This is because a lack of competence in employees --CAUSES--> Vulnerability to social engineering attacks like phishing. Therefore, investing in employee training and education can help prevent phishing attacks. SMBs that experienced cyber-attacks --RELATED_TO--> Phishing (most prevalent type), indicating that addressing this vulnerability is crucial.
+
+
+outputs from mistral:
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+[INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+[INFO] No facts found even after relaxing. Using generic graph sample.
+
+=== GRAPH RAG RESULT ===
+Q: Which controls help Australian small businesses mitigate phishing or scam-related cyber threats?
+
+Intent: GraphIntent(head_type='PolicyOrRegulation', tail_type='Vulnerability', relations=['MITIGATES', 'CAUSES'], head_keywords=['data protection', 'privacy'], tail_keywords=['heartbleed'])
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT $limit
+
+Facts used:
+  - Australian Small Businesses (SMBs) --REQUIRES--> Multi-factor authentication (MFA)
+  - Australian Small Businesses (SMBs) --REQUIRES--> Software updating
+  - Australian Small Businesses (SMBs) --REQUIRES--> Data backups
+  - Australian Small Businesses (SMBs) --RELATED_TO--> Lack of time, resources and expertise
+  - Australian Small Businesses (SMBs) --RELATED_TO--> Lack of funds
+  - Australian Small Businesses (SMBs) --RELATED_TO--> Lack of knowledge on where to start
+  - Multi-factor authentication (MFA) --MITIGATES--> Cyber criminals accessing online accounts and applications
+  - Multi-factor authentication (MFA) --RELATED_TO--> Recommended basic security measure (by ACSC)
+  - Data backups --RELATED_TO--> Lack of periodic testing
+  - Small businesses --APPLIES_TO--> Maturity Level One of the Essential Eight
+  - Small businesses --REQUIRES--> Emergency plan for cyber security incidents
+  - Small businesses --REQUIRES--> Consulting with an IT professional
+  - Small businesses --REQUIRES--> Consulting with a legal professional (for legal obligations)
+  - Small businesses --REQUIRES--> Understanding obligations for protecting personal information
+  - Small businesses --REQUIRES--> Reading ACSC resources on website security
+  - Small businesses --RELATED_TO--> Especially vulnerable to cyber security threats
+  - Small businesses --RELATED_TO--> Rely heavily on security of platforms they use (assuming ‘secure-by-design’)
+  - Small businesses --RELATED_TO--> Intimidated by technical jargon and overwhelmed by steps to take
+  - Small businesses --RELATED_TO--> Low confidence in their ability to identify and respond to cyber threats
+  - Cyber security incident --LEADS_TO--> Devastating impacts
+  - Cybercriminals --TARGETS--> Australian Small Businesses (SMBs)
+  - Cybercriminals --TARGETS--> Small businesses
+  - Cybercriminals --TARGETS--> Devices and services in your network
+  - Cybercriminals --TARGETS--> Data held by your business
+  - Cybercriminals --TARGETS--> SMBs
+
+Answer:
+ Australian small businesses can mitigate phishing or scam-related cyber threats by implementing multi-factor authentication (MFA) and keeping their software updated. MFA adds an extra layer of security to online accounts and applications, making it harder for cybercriminals to gain access. Regular software updating ensures that any vulnerabilities are patched, reducing the chances of exploitation. However, small businesses may face challenges in implementing these controls due to lack of time, resources, and expertise.
+
+
+outputs from qwen:
+[INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+
+=== GRAPH RAG RESULT ===
+Q: Which controls help Australian small businesses mitigate phishing or scam-related cyber threats?
+
+Intent: GraphIntent(head_type='ControlOrMeasure', tail_type='ThreatOrAttack', relations=['MITIGATES'], head_keywords=[], tail_keywords=['phishing', 'scam'])
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE ($head_type IS NULL OR h.type = $head_type)
+  AND ($tail_type IS NULL OR t.type = $tail_type)
+  AND (size($relations) = 0 OR r.type IN $relations)
+  AND (
+        size($head_keywords) = 0
+        OR ANY(kw IN $head_keywords WHERE toLower(h.name) CONTAINS toLower(kw))
+      )
+  AND (
+        size($tail_keywords) = 0
+        OR ANY(kw IN $tail_keywords WHERE toLower(t.name) CONTAINS toLower(kw))
+      )
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT $limit
+
+Facts used:
+  - SMBs that experienced cyber-attacks --RELATED_TO--> Phishing (most prevalent type)
+  - Lack of competence (in employees) --CAUSES--> Vulnerability to social engineering attacks like phishing
+
+Answer:
+ Australian small businesses can mitigate phishing or scam-related cyber threats by addressing the root cause of vulnerability, which is lack of employee competence. Implementing regular cybersecurity training programs can enhance employees' awareness and ability to recognize social engineering attacks. Additionally, deploying technical controls such as email filtering and multi-factor authentication can provide layered protection against phishing attempts. These combined strategies help reduce the risk of successful cyber-attacks by both educating staff and strengthening technical defenses.
+
+
+
+
+
+Question: What impacts do ransomware incidents have on small businesses in Australia?
+Answers:
+1. llama:
+=== GRAPH RAG RESULT ===
+Q: What impacts do ransomware incidents have on small businesses in Australia?
+
+Intent: GraphIntent(head_type='ThreatOrAttack', tail_type='ImpactOrOutcome', relations=['LEADS_TO'], head_keywords=[], tail_keywords=['impacts', 'ransomware', 'incidents'])
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE ($head_type IS NULL OR h.type = $head_type)
+  AND ($tail_type IS NULL OR t.type = $tail_type)
+  AND (size($relations) = 0 OR r.type IN $relations)
+  AND (
+        size($head_keywords) = 0
+        OR ANY(kw IN $head_keywords WHERE toLower(h.name) CONTAINS toLower(kw))
+      )
+  AND (
+        size($tail_keywords) = 0
+        OR ANY(kw IN $tail_keywords WHERE toLower(t.name) CONTAINS toLower(kw))
+      )
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT $limit
+
+Facts used:
+  - Cyber security incident --LEADS_TO--> Devastating impacts
+
+Answer:
+ Cyber security incidents can lead to devastating impacts. I do not have enough information from the knowledge graph to answer this question. I do not have enough information from the knowledge graph to answer this question. I do not have enough information from the knowledge graph to answer this question.
+
+
+2. mistral:
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+
+=== GRAPH RAG RESULT ===
+Q: What impacts do ransomware incidents have on small businesses in Australia?
+
+Intent: GraphIntent(head_type='ControlOrMeasure', tail_type='ThreatOrAttack', relations=['LEADS_TO', 'MITIGATES'], head_keywords=[], tail_keywords=['ransomware', 'incident', 'small business', 'australia'])
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE ($head_type IS NULL OR h.type = $head_type)
+  AND ($tail_type IS NULL OR t.type = $tail_type)
+  AND (size($relations) = 0 OR r.type IN $relations)
+  AND (
+        size($head_keywords) = 0
+        OR ANY(kw IN $head_keywords WHERE toLower(h.name) CONTAINS toLower(kw))
+      )
+  AND (
+        size($tail_keywords) = 0
+        OR ANY(kw IN $tail_keywords WHERE toLower(t.name) CONTAINS toLower(kw))
+      )
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT $limit
+
+Facts used:
+  - Threat-blocking technology --MITIGATES--> Known malicious cyber threats reaching Australian consumers and businesses
+  - Introducing expectations of SaaS providers --MITIGATES--> Disproportionate burden of cyber threats on small businesses
+
+Answer:
+ Ransomware incidents in Australian small businesses can be mitigated by threat-blocking technology, which helps prevent known malicious cyber threats from reaching them. Additionally, introducing expectations of Software as a Service (SaaS) providers can also help alleviate the disproportionate burden of cyber threats on these businesses, as it can shift some of the responsibility for security to the SaaS providers.
+
+
+3. qwen:
+=== GRAPH RAG RESULT ===
+Q: What impacts do ransomware incidents have on small businesses in Australia?
+
+Intent: GraphIntent(head_type='ThreatOrAttack', tail_type='ImpactOrOutcome', relations=['LEADS_TO'], head_keywords=[], tail_keywords=['impacts', 'ransomware', 'incidents'])
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE ($head_type IS NULL OR h.type = $head_type)
+  AND ($tail_type IS NULL OR t.type = $tail_type)
+  AND (size($relations) = 0 OR r.type IN $relations)
+  AND (
+        size($head_keywords) = 0
+        OR ANY(kw IN $head_keywords WHERE toLower(h.name) CONTAINS toLower(kw))
+      )
+  AND (
+        size($tail_keywords) = 0
+        OR ANY(kw IN $tail_keywords WHERE toLower(t.name) CONTAINS toLower(kw))
+      )
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT $limit
+
+Facts used:
+  - Cyber security incident --LEADS_TO--> Devastating impacts
+
+Answer:
+ Ransomware incidents can lead to devastating impacts on small businesses in Australia. The knowledge graph indicates that a cyber security incident --LEADS_TO--> Devastating impacts. While the specific details of ransomware's effects are not explicitly outlined, the general implication is that such incidents can cause significant harm. Small businesses may face financial losses, operational disruptions, and damage to their reputation.
+
+
+
+
+Question: Which government bodies are responsible for cyber security guidance for Australian SMEs?
+Answers:
+1. llama:
+=== GRAPH RAG RESULT ===
+Q: Which government bodies are responsible for cyber security guidance for Australian SMEs?
+
+Intent: GraphIntent(head_type=None, tail_type=None, relations=[], head_keywords=[], tail_keywords=['government', 'bodies', 'responsible'])
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE ($head_type IS NULL OR h.type = $head_type)
+  AND ($tail_type IS NULL OR t.type = $tail_type)
+  AND (size($relations) = 0 OR r.type IN $relations)
+  AND (
+        size($head_keywords) = 0
+        OR ANY(kw IN $head_keywords WHERE toLower(h.name) CONTAINS toLower(kw))
+      )
+  AND (
+        size($tail_keywords) = 0
+        OR ANY(kw IN $tail_keywords WHERE toLower(t.name) CONTAINS toLower(kw))
+      )
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT $limit
+
+Facts used:
+  - Australian Government --RESPONSIBLE_FOR--> Supporting safe and responsible use of AI
+  - ASD’s Essential Eight mitigation strategies --MITIGATES--> Risk of compromise (government systems)
+  - Highly sophisticated nation states and state-sponsored actors --TARGETS--> Governments and critical infrastructure providers
+  - ASD’s Essential Eight --APPLIES_TO--> Australian Government agencies
+  - ASD’s Essential Eight --RELATED_TO--> Australian Government Information Security Manual
+  - ASD’s Essential Eight --RELATED_TO--> Zero trust (whole-of-government culture)
+  - ASD Essential Eight --REQUIRES--> Uplift of government systems
+  - ASD Essential Eight --RELATED_TO--> Baseline recommended by the Australian government
+  - Cyber Incident Review Board (CIRB) --RESPONSIBLE_FOR--> Issuing advice to government and industry on how to avoid recurrence of incidents
+  - Ransomware business model --REQUIRES--> Disruption by Australian Government
+  - Foreign owned suppliers operating in Australia --RELATED_TO--> Subject to a foreign government’s lawful access to data
+  - Cyber Incident Management Arrangements --REQUIRES--> Formally recognising businesses in government's incident response playbook
+  - National Cyber Security Coordinator (Cyber Coordinator) --RESPONSIBLE_FOR--> Coordinating whole-of-government incident response efforts
+
+Answer:
+ The Australian Government is responsible for supporting the safe and responsible use of AI, which may indirectly relate to cyber security guidance for Australian SMEs. The Cyber Incident Review Board (CIRB) issues advice to government and industry on how to avoid recurrence of incidents, which could include SMEs. The National Cyber Security Coordinator (Cyber Coordinator) coordinates whole-of-government incident response efforts, which may also involve SMEs. However, there is no direct information in the knowledge graph about government bodies specifically responsible for cyber security guidance for Australian SMEs.
+
+
+
+2. mistral:
+=== GRAPH RAG RESULT ===
+Q: Which government bodies are responsible for cyber security guidance for Australian SMEs?
+
+Intent: GraphIntent(head_type=None, tail_type=None, relations=[], head_keywords=[], tail_keywords=['government', 'bodies', 'responsible'])
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE ($head_type IS NULL OR h.type = $head_type)
+  AND ($tail_type IS NULL OR t.type = $tail_type)
+  AND (size($relations) = 0 OR r.type IN $relations)
+  AND (
+        size($head_keywords) = 0
+        OR ANY(kw IN $head_keywords WHERE toLower(h.name) CONTAINS toLower(kw))
+      )
+  AND (
+        size($tail_keywords) = 0
+        OR ANY(kw IN $tail_keywords WHERE toLower(t.name) CONTAINS toLower(kw))
+      )
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT $limit
+
+Facts used:
+  - Australian Government --RESPONSIBLE_FOR--> Supporting safe and responsible use of AI
+  - ASD’s Essential Eight mitigation strategies --MITIGATES--> Risk of compromise (government systems)
+  - Highly sophisticated nation states and state-sponsored actors --TARGETS--> Governments and critical infrastructure providers
+  - ASD’s Essential Eight --APPLIES_TO--> Australian Government agencies
+  - ASD’s Essential Eight --RELATED_TO--> Australian Government Information Security Manual
+  - ASD’s Essential Eight --RELATED_TO--> Zero trust (whole-of-government culture)
+  - ASD Essential Eight --REQUIRES--> Uplift of government systems
+  - ASD Essential Eight --RELATED_TO--> Baseline recommended by the Australian government
+  - Cyber Incident Review Board (CIRB) --RESPONSIBLE_FOR--> Issuing advice to government and industry on how to avoid recurrence of incidents
+  - Ransomware business model --REQUIRES--> Disruption by Australian Government
+  - Foreign owned suppliers operating in Australia --RELATED_TO--> Subject to a foreign government’s lawful access to data
+  - Cyber Incident Management Arrangements --REQUIRES--> Formally recognising businesses in government's incident response playbook
+  - National Cyber Security Coordinator (Cyber Coordinator) --RESPONSIBLE_FOR--> Coordinating whole-of-government incident response efforts
+
+Answer:
+ The Australian Government is responsible for supporting the safe and responsible use of AI. However, the knowledge graph does not provide specific information about cyber security guidance for Australian Small and Medium Enterprises (SMEs). The Essential Eight mitigation strategies, related to the Australian Government Information Security Manual and Zero trust (whole-of-government culture), are applied to Australian Government agencies. The Cyber Incident Review Board (CIRB) issues advice to government and industry on how to avoid recurrence of incidents, but it does not seem to be directly responsible for providing cyber security guidance to SMEs.
+
+
+
+3. qwen:
+=== GRAPH RAG RESULT ===
+Q: Which government bodies are responsible for cyber security guidance for Australian SMEs?
+
+Intent: GraphIntent(head_type=None, tail_type=None, relations=[], head_keywords=[], tail_keywords=['government', 'bodies', 'responsible'])
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE ($head_type IS NULL OR h.type = $head_type)
+  AND ($tail_type IS NULL OR t.type = $tail_type)
+  AND (size($relations) = 0 OR r.type IN $relations)
+  AND (
+        size($head_keywords) = 0
+        OR ANY(kw IN $head_keywords WHERE toLower(h.name) CONTAINS toLower(kw))
+      )
+  AND (
+        size($tail_keywords) = 0
+        OR ANY(kw IN $tail_keywords WHERE toLower(t.name) CONTAINS toLower(kw))
+      )
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT $limit
+
+Facts used:
+  - Australian Government --RESPONSIBLE_FOR--> Supporting safe and responsible use of AI
+  - ASD’s Essential Eight mitigation strategies --MITIGATES--> Risk of compromise (government systems)
+  - Highly sophisticated nation states and state-sponsored actors --TARGETS--> Governments and critical infrastructure providers
+  - ASD’s Essential Eight --APPLIES_TO--> Australian Government agencies
+  - ASD’s Essential Eight --RELATED_TO--> Australian Government Information Security Manual
+  - ASD’s Essential Eight --RELATED_TO--> Zero trust (whole-of-government culture)
+  - ASD Essential Eight --REQUIRES--> Uplift of government systems
+  - ASD Essential Eight --RELATED_TO--> Baseline recommended by the Australian government
+  - Cyber Incident Review Board (CIRB) --RESPONSIBLE_FOR--> Issuing advice to government and industry on how to avoid recurrence of incidents
+  - Ransomware business model --REQUIRES--> Disruption by Australian Government
+  - Foreign owned suppliers operating in Australia --RELATED_TO--> Subject to a foreign government’s lawful access to data
+  - Cyber Incident Management Arrangements --REQUIRES--> Formally recognising businesses in government's incident response playbook
+  - National Cyber Security Coordinator (Cyber Coordinator) --RESPONSIBLE_FOR--> Coordinating whole-of-government incident response efforts
+
+Answer:
+ The Australian Government is responsible for supporting safe and responsible use of AI, and the Cyber Incident Review Board (CIRB) issues advice to government and industry on avoiding incident recurrence. The National Cyber Security Coordinator coordinates whole-of-government incident response efforts, and ASD’s Essential Eight mitigation strategies apply to Australian Government agencies, which are related to the Australian Government Information Security Manual and Zero trust principles. While the facts do not explicitly mention SMEs, the guidance applies to government agencies and industry, suggesting a broader applicability. I do not have enough information from the knowledge graph to answer this question.
+
+
+
+
+

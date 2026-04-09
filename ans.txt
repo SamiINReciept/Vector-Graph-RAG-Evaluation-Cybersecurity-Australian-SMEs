@@ -1,0 +1,230 @@
+outputs for llama:
+Generated Cypher:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+[WARN] First Cypher failed: Cypher execution error: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Query cannot conclude with MATCH (must be a RETURN clause, a FINISH clause, an update clause, a unit subquery call, or a procedure call with no YIELD). (line 1, column 1 (offset: 0))
+"MATCH (h:Entity)-[r:RELATION]->(t:Entity)"
+ ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+Retrying with fixed Cypher:
+ MATCH (h:Entity {type: "ControlOrMeasure"})-[:RELATION]->(t:Entity)
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 195, in run_cypher
+    result = session.run(cypher)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/session.py", line 320, in run
+    self._auto_result._run(
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 237, in _run
+    self._attach()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 439, in _attach
+    self._connection.fetch_message()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 192, in inner
+    func(*args, **kwargs)
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 866, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 262, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Query cannot conclude with MATCH (must be a RETURN clause, a FINISH clause, an update clause, a unit subquery call, or a procedure call with no YIELD). (line 1, column 1 (offset: 0))
+"MATCH (h:Entity)-[r:RELATION]->(t:Entity)"
+ ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 264, in answer
+    facts = self.run_cypher(cypher)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 197, in run_cypher
+    raise RuntimeError(f"Cypher execution error: {e}") from e
+RuntimeError: Cypher execution error: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Query cannot conclude with MATCH (must be a RETURN clause, a FINISH clause, an update clause, a unit subquery call, or a procedure call with no YIELD). (line 1, column 1 (offset: 0))
+"MATCH (h:Entity)-[r:RELATION]->(t:Entity)"
+ ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 195, in run_cypher
+    result = session.run(cypher)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/session.py", line 320, in run
+    self._auto_result._run(
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 237, in _run
+    self._attach()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 439, in _attach
+    self._connection.fetch_message()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 192, in inner
+    func(*args, **kwargs)
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 866, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 262, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Variable `r` not defined (line 2, column 24 (offset: 91))
+"RETURN h.name AS head, r.type AS relation, t.name AS tail"
+                        ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 342, in <module>
+    result = rag.answer(args.question, max_facts=25)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 286, in answer
+    facts = self.run_cypher(cypher_fixed)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 197, in run_cypher
+    raise RuntimeError(f"Cypher execution error: {e}") from e
+RuntimeError: Cypher execution error: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Variable `r` not defined (line 2, column 24 (offset: 91))
+"RETURN h.name AS head, r.type AS relation, t.name AS tail"
+                        ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+
+
+outputs for mistral:
+ault to no truncation.
+Generated Cypher:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+[WARN] First Cypher failed: Cypher execution error: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Query cannot conclude with MATCH (must be a RETURN clause, a FINISH clause, an update clause, a unit subquery call, or a procedure call with no YIELD). (line 1, column 1 (offset: 0))
+"MATCH (h:Entity)-[r:RELATION]->(t:Entity)"
+ ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+Retrying with fixed Cypher:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+
+=== GRAPH RAG RESULT ===
+Q: Which controls help Australian small businesses mitigate phishing or scam-related cyber threats?
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+
+Facts used:
+  - Multi-factor authentication (MFA) --MITIGATES--> Cyber criminals accessing online accounts and applications
+  - Multi-factor authentication (MFA) --RELATED_TO--> Recommended basic security measure (by ACSC)
+  - Data backups --RELATED_TO--> Lack of periodic testing
+  - Multi-Factor Authentication (MFA) --MITIGATES--> Compromise of online accounts
+  - Software updates --MITIGATES--> Security flaws
+  - Regular backups --MITIGATES--> Information loss or compromise
+  - Security software --REQUIRES--> Regular scans on your devices
+  - Regular website backups --MITIGATES--> Need to restore website after a cyber attack
+  - Centralising data --REQUIRES--> Secure configurations and restricted access
+  - Paying a ransom --CAUSES--> Increased likelihood of being targeted again
+  - Paying a ransom --LEADS_TO--> Increased likelihood of being targeted again
+  - ASD’s ACSC Cyber Resources for Small Businesses --RELATED_TO--> Australian Information Security Association (AISA)
+  - Data stocktake --REQUIRES--> Visibility of the key data (customer, supplier, employee)
+  - Unique logins (for staff) --MITIGATES--> Improper access/authorisation
+  - Cyber Incident Response Plan --MITIGATES--> Minimising impact of cyber incident
+  - User access --REQUIRES--> Only what they need for their role
+  - Plain language advice/explanations of technical terms --CAUSES--> Improved comprehension and retention for SMBs
+  - Backups --REQUIRES--> Testing regularly by attempting to restore data
+  - One backup --REQUIRES--> Kept disconnected from your device, preferably offsite
+  - Cyber security practices --REQUIRES--> Ongoing learning (monitoring)
+  - Automating updates and backups --MITIGATES--> Cyber security practices decay over time
+  - Case studies (in advice) --CAUSES--> Better assess cyber risks and prioritise practices
+  - IT asset inventory --MITIGATES--> Difficulty in tracking technology endpoints
+  - IT asset inventory --MITIGATES--> Risk of unauthorised access and data breaches
+  - IT asset inventory --MITIGATES--> Risk of unauthorised access and data breaches
+
+Answer:
+ Multi-factor authentication (MFA) mitigates cyber criminals accessing online accounts and applications, which can be used to prevent phishing or scam-related cyber threats. Unique logins for staff also mitigate improper access/authorisation, which can help in preventing phishing or scam-related cyber threats. Regular backups can help in restoring data if a phishing attack leads to data loss or compromise. Plain language advice/explanations of technical terms can improve comprehension and retention for small businesses, helping them better understand and implement cyber security practices to mitigate phishing or scam-related cyber threats.
+
+
+outputs for qwen:
+Generated Cypher:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+[WARN] First Cypher failed: Cypher execution error: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Query cannot conclude with MATCH (must be a RETURN clause, a FINISH clause, an update clause, a unit subquery call, or a procedure call with no YIELD). (line 1, column 1 (offset: 0))
+"MATCH (h:Entity)-[r:RELATION]->(t:Entity)"
+ ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+Retrying with fixed Cypher:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+RETURN h.name AS head, r.type AS relation, t.name AS tail; The error message indicates that the query cannot conclude with a MATCH clause. In Cypher, a query must end with a RETURN, FINISH, or an update clause. The original query only has a MATCH clause without a RETURN statement. To fix this, we need to add a RETURN clause that specifies the desired output. The corrected query should include the RETURN clause with the required fields: h.name AS head, r.type AS relation, and t.name AS tail. The WHERE condition remains the same to filter nodes of type "ControlOrMeasure". The final query should now be valid and return the desired results.
+MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+RETURN h.name AS head, r.type AS relation, t.name AS tail;
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 195, in run_cypher
+    result = session.run(cypher)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/session.py", line 320, in run
+    self._auto_result._run(
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 237, in _run
+    self._attach()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 439, in _attach
+    self._connection.fetch_message()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 192, in inner
+    func(*args, **kwargs)
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 866, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 262, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Query cannot conclude with MATCH (must be a RETURN clause, a FINISH clause, an update clause, a unit subquery call, or a procedure call with no YIELD). (line 1, column 1 (offset: 0))
+"MATCH (h:Entity)-[r:RELATION]->(t:Entity)"
+ ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 264, in answer
+    facts = self.run_cypher(cypher)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 197, in run_cypher
+    raise RuntimeError(f"Cypher execution error: {e}") from e
+RuntimeError: Cypher execution error: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Query cannot conclude with MATCH (must be a RETURN clause, a FINISH clause, an update clause, a unit subquery call, or a procedure call with no YIELD). (line 1, column 1 (offset: 0))
+"MATCH (h:Entity)-[r:RELATION]->(t:Entity)"
+ ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 195, in run_cypher
+    result = session.run(cypher)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/session.py", line 320, in run
+    self._auto_result._run(
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 237, in _run
+    self._attach()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 439, in _attach
+    self._connection.fetch_message()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 192, in inner
+    func(*args, **kwargs)
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 866, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 262, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'The': expected 'ALTER', 'ORDER BY', 'CALL', 'USING PERIODIC COMMIT', 'CREATE', 'LOAD CSV', 'START DATABASE', 'STOP DATABASE', 'DEALLOCATE', 'DELETE', 'DENY', 'DETACH', 'DROP', 'DRYRUN', 'FINISH', 'FOREACH', 'GRANT', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REALLOCATE', 'REMOVE', 'RENAME', 'RETURN', 'REVOKE', 'ENABLE SERVER', 'SET', 'SHOW', 'SKIP', 'TERMINATE', 'UNWIND', 'USE', 'WITH' or <EOF> (line 3, column 60 (offset: 135))
+"RETURN h.name AS head, r.type AS relation, t.name AS tail; The error message indicates that the query cannot conclude with a MATCH clause. In Cypher, a query must end with a RETURN, FINISH, or an update clause. The original query only has a MATCH clause without a RETURN statement. To fix this, we need to add a RETURN clause that specifies the desired output. The corrected query should include the RETURN clause with the required fields: h.name AS head, r.type AS relation, and t.name AS tail. The WHERE condition remains the same to filter nodes of type "ControlOrMeasure". The final query should now be valid and return the desired results."
+                                                            ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 342, in <module>
+    result = rag.answer(args.question, max_facts=25)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 286, in answer
+    facts = self.run_cypher(cypher_fixed)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/rag_project/src/graph_rag.py", line 197, in run_cypher
+    raise RuntimeError(f"Cypher execution error: {e}") from e
+RuntimeError: Cypher execution error: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'The': expected 'ALTER', 'ORDER BY', 'CALL', 'USING PERIODIC COMMIT', 'CREATE', 'LOAD CSV', 'START DATABASE', 'STOP DATABASE', 'DEALLOCATE', 'DELETE', 'DENY', 'DETACH', 'DROP', 'DRYRUN', 'FINISH', 'FOREACH', 'GRANT', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REALLOCATE', 'REMOVE', 'RENAME', 'RETURN', 'REVOKE', 'ENABLE SERVER', 'SET', 'SHOW', 'SKIP', 'TERMINATE', 'UNWIND', 'USE', 'WITH' or <EOF> (line 3, column 60 (offset: 135))
+"RETURN h.name AS head, r.type AS relation, t.name AS tail; The error message indicates that the query cannot conclude with a MATCH clause. In Cypher, a query must end with a RETURN, FINISH, or an update clause. The original query only has a MATCH clause without a RETURN statement. To fix this, we need to add a RETURN clause that specifies the desired output. The corrected query should include the RETURN clause with the required fields: h.name AS head, r.type AS relation, and t.name AS tail. The WHERE condition remains the same to filter nodes of type "ControlOrMeasure". The final query should now be valid and return the desired results."
+                                                            ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}

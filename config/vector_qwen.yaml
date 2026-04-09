@@ -1,0 +1,37 @@
+experiment_name: vector_qwen
+
+data:
+  pdf_dir: data/pdfs
+  corpus_cache: data/corpus.pkl
+
+chunking:
+  chunk_size: 1000
+  chunk_overlap: 150
+
+embedding:
+  model_name: BAAI/bge-m3
+  batch_size: 16
+  device: cuda
+
+llm:
+  model_name: Qwen/Qwen3-8B
+  dtype: bfloat16
+  device_map: auto
+  max_new_tokens: 128
+  temperature: 0.1
+  top_p: 1.0
+  max_time: 6.0 # hard stop per generation
+  no_repeat_ngram_size: 6
+  repetition_penalty: 1.1
+
+vector_store:
+  type: chromadb
+  persist_dir: data/vector_store
+
+graph:
+  neo4j_uri: #insert your Neo4j URI here, e.g. neo4j+s://XXXXXXXX.databases.neo4j.io
+  neo4j_user: neo4j
+  neo4j_password: #insert your Neo4j password here
+
+ragas:
+  judge_model_name: Qwen/Qwen3-8B

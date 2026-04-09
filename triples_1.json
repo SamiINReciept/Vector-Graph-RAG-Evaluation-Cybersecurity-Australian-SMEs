@@ -1,0 +1,886 @@
+{
+  "triples": [
+    {
+      "head": "Australian Small Businesses (SMBs)",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Multi-factor authentication (MFA)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Turn on multi-factor authentication [is a recommended basic security measure].",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Australian Small Businesses (SMBs)",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Software updating",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Update your software [is a recommended basic security measure].",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Australian Small Businesses (SMBs)",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Data backups",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Back up your information [is a recommended basic security measure].",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Small businesses",
+      "head_type": "Organization",
+      "relation": "APPLIES_TO",
+      "tail": "Maturity Level One of the Essential Eight",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "After completing this guide, we recommend small businesses implement Maturity Level One of the Essential Eight.",
+      "source_document": "ACSC_Small_Business_Cyber_Security_Guide_V6.pdf"
+    },
+    {
+      "head": "Cyber security incident",
+      "head_type": "ThreatOrAttack",
+      "relation": "LEADS_TO",
+      "tail": "Devastating impacts",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "For a small business, even a minor cyber security incident can have devastating impacts.",
+      "source_document": "ACSC_Small_Business_Cyber_Security_Guide_V6.pdf"
+    },
+    {
+      "head": "Cybercriminals",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Small businesses",
+      "tail_type": "Organization",
+      "supporting_sentence": "Scams are a common way that cybercriminals target small businesses.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Scam messages",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Sensitive information (passwords)",
+      "tail_type": "AssetOrData",
+      "supporting_sentence": "Their goal is to scam you or your staff into... giving away sensitive information, such as passwords.",
+      "source_document": "ACSC_Small_Business_Cyber_Security_Guide_V6.pdf"
+    },
+    {
+      "head": "Scam messages",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Sending money or gift cards",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Their goal is to scam you or your staff into: sending money or gift cards.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Email attacks",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Small businesses",
+      "tail_type": "Organization",
+      "supporting_sentence": "The Email attacks section provides advice for small businesses.",
+      "source_document": "ACSC_Small_Business_Cyber_Security_Guide_V6.pdf"
+    },
+    {
+      "head": "Multi-Factor Authentication (MFA)",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Compromise of online accounts",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "One of the most effective ways to protect online accounts and applications from cyber criminals is through multi-factor authentication (MFA).",
+      "source_document": "ACSC_Small_Business_Cyber_Security_Guide_V6.pdf"
+    },
+    {
+      "head": "Software updates",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Security flaws",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Updates can fix security flaws in your operating system and other software, so that it is harder for a cybercriminal to break in.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Regular backups",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Information loss or compromise",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Regular backups can help you recover your information if it is lost or compromised.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Lack of regular backups",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "Impossible to recover information after a cyber attack",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Without a regular backup, it could be impossible for you to recover your information after a cyber attack.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Security software",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Regular scans on your devices",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Set up security software to complete regular scans on your devices.",
+      "source_document": "Small business cyber security checklist (June 2023).pdf"
+    },
+    {
+      "head": "Cybercriminals",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Devices and services in your network",
+      "tail_type": "AssetOrData",
+      "supporting_sentence": "The devices and services in your network can be a prime target for cybercriminals.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Administrative accounts (servers/NAS)",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Strong passphrase or multi-factor authentication",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Administrative accounts should be secured with a strong passphrase or multi-factor authentication.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Cyber supply chain",
+      "head_type": "Other",
+      "relation": "VULNERABILITY",
+      "tail": "Security issues with services or providers",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Security issues with these services or providers could have a significant impact to your business.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Websites",
+      "head_type": "AssetOrData",
+      "relation": "TARGETS",
+      "tail": "Cyber attacks",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Websites are a prime target for cyber attacks.",
+      "source_document": "ACSC_Small_Business_Cyber_Security_Guide_V6.pdf"
+    },
+    {
+      "head": "Regular website backups",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Need to restore website after a cyber attack",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "back up your website regularly so you can restore it after a cyber attack.",
+      "source_document": "ACSC_Small_Business_Cyber_Security_Guide_V6.pdf"
+    },
+    {
+      "head": "Cybercriminals",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Data held by your business",
+      "tail_type": "AssetOrData",
+      "supporting_sentence": "Data held by your business is an attractive target to cybercriminals.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Data breaches",
+      "head_type": "ImpactOrOutcome",
+      "relation": "RELATED_TO",
+      "tail": "Cybercriminals targeting business data",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Data breaches are on the rise – don’t let your business fall victim.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Business data",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Understanding location",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "It’s important to understand what data your business holds, and in what locations.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Decentralised data storage",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "More opportunities for a cybercriminal to attack",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Numerous systems can also create more opportunities for a cybercriminal to attack.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Centralising data",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Secure configurations and restricted access",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Centralising your data can create a bigger breach if your systems are compromised, so ensure this central location is adequately protected with secure configurations and restricted access.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Employees",
+      "head_type": "Organization",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "First line of defence against cyber attacks",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Employees with good cyber security practices are your first line of defence against cyber attacks.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Small businesses",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Emergency plan for cyber security incidents",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Create an emergency plan for cyber security incidents.",
+      "source_document": "Small business cyber security checklist (June 2023).pdf"
+    },
+    {
+      "head": "ACSC Partnership Program",
+      "head_type": "Organization",
+      "relation": "RELATED_TO",
+      "tail": "Small businesses",
+      "tail_type": "Organization",
+      "supporting_sentence": "Register your business with the ACSC Partnership Program.",
+      "source_document": "Small business cyber security checklist (June 2023).pdf"
+    },
+    {
+      "head": "ACSC",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Providing assistance and advice (via hotline)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "If you experience a ransomware incident and require support, call the ACSC’s 24/7 Hotline on 1300 CYBER1 (1300 292 371).",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Ransomware incidents",
+      "head_type": "ThreatOrAttack",
+      "relation": "REQUIRES",
+      "tail": "Reporting to the ACSC",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "victims are encouraged to report ransomware incidents to the ACSC at cyber.gov.au.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Paying a ransom",
+      "head_type": "ControlOrMeasure",
+      "relation": "CAUSES",
+      "tail": "Increased likelihood of being targeted again",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Paying a ransom does not guarantee a victim’s files will be restored... It also increases the likelihood of a victim being targeted again.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "ACSC Small Business Cyber Security Guide",
+      "head_type": "PolicyOrRegulation",
+      "relation": "APPLIES_TO",
+      "tail": "Small and medium businesses",
+      "tail_type": "Organization",
+      "supporting_sentence": "The language is clear, the actions are simple, and the guidance is tailored for small and medium businesses.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "ASD’s ACSC Small Business Cyber Security Guide",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "ASD’s Essential Eight maturity model",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "This guide is intended to complement the detailed Australian Signals Directorate’s (ASD) Essential Eight maturity model.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "ASD’s ACSC Cyber Resources for Small Businesses",
+      "head_type": "ControlOrMeasure",
+      "relation": "RELATED_TO",
+      "tail": "Australian Information Security Association (AISA)",
+      "tail_type": "Organization",
+      "supporting_sentence": "ASD’s ACSC Cyber Resources for Small Businesses [is listed alongside] AISA Corporate Partnership and membership.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "SME Director",
+      "head_type": "Organization",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Oversight of cyber security risks",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "director duties are relevant to the oversight of cyber security risks.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "SME Director",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Being vigilant in updating computer systems, software, hardware, services, and applications",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "An SME director should be confirming that the organisation is vigilant in updating computer systems, software, hardware, services, and applications to the latest versions.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Unpatched vulnerabilities",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "Breaches",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "A large percentage of breaches are due to vulnerabilities that have not been patched, or vulnerabilities that have.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Data stocktake",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Visibility of the key data (customer, supplier, employee)",
+      "tail_type": "AssetOrData",
+      "supporting_sentence": "Undertake a data stocktake that provides visibility of the key data that is collected from customers, suppliers and employees.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Unique logins (for staff)",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Improper access/authorisation",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Implement access and authorisation controls, including through creating unique logins for each staff member using computer systems.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Cyber Incident Response Plan",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Minimising impact of cyber incident",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Having a documented Cyber Security Incident Response Plan is necessary for an organisation to respond swiftly, efficiently, and effectively to any incident, thereby minimising the impact.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Business devices",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Locked with a passphrase, PIN or biometrics",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Use security controls to further protect your business devices. At a minimum, they should be locked with a passphrase, PIN or biometrics.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Devices",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Automatically lock after a short time of inactivity",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Configure devices to automatically lock after a short time of inactivity.",
+      "source_document": "Small business cyber security checklist (June 2023).pdf"
+    },
+    {
+      "head": "Shared accounts",
+      "head_type": "Vulnerability",
+      "relation": "REQUIRES",
+      "tail": "Limited use and securing",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Limit the use of shared accounts and secure any that are used in your business.",
+      "source_document": "Small business cyber security checklist (June 2023).pdf"
+    },
+    {
+      "head": "User access",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Only what they need for their role",
+      "tail_type": "Other",
+      "supporting_sentence": "Ensure each user can access only what they need for their role.",
+      "source_document": "Small business cyber security checklist (June 2023).pdf"
+    },
+    {
+      "head": "Business devices (before disposal)",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Perform a factory reset",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Perform a factory reset before selling or disposing of business devices.",
+      "source_document": "Small business cyber security checklist (June 2023).pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Less likely to implement cyber security measures",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Small businesses can be particularly vulnerable, as they are less likely to implement cyber security measures that could help prevent and recover from ransomware.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "ASD Essential Eight Mitigation Strategies",
+      "head_type": "PolicyOrRegulation",
+      "relation": "LEADS_TO",
+      "tail": "Cost-effectiveness (for SMBs)",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "implementing the Essential Eight Mitigation Strategies can be more cost-effective for SMBs in terms of time, money and effort than having to respond to a cyber security incident.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Outsourcing IT security",
+      "head_type": "Organization",
+      "relation": "CAUSES",
+      "tail": "Gaps in the owner’s cyber security knowledge",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Outsourcing may lead to gaps in the owner’s cyber security knowledge about which security measures are being implemented to protect their business.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "SMBs that outsource",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Low implementation of Essential Eight Mitigation Strategies",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "a large proportion of businesses who outsource have low implementation of the Essential Eight Mitigation Strategies.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "ACSC",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Prioritising technical advice",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Technical advice must be prioritised so that Australian SMBs know which cyber security practices to implement first for best results.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "ACSC",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Guidance containing low cost tips",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Guidance for Australian SMBs must be comprised of effective, low cost tips (in both time and money) that are easy to implement.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Plain language advice/explanations of technical terms",
+      "head_type": "ControlOrMeasure",
+      "relation": "CAUSES",
+      "tail": "Improved comprehension and retention for SMBs",
+      "tail_type": "Other",
+      "supporting_sentence": "Plain language advice and explanations of technical terms... must be retained to improve comprehension and retention for SMBs.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Ransomware",
+      "head_type": "ThreatOrAttack",
+      "relation": "REQUIRES",
+      "tail": "Regularly backup important data",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Regularly backup your important data [is recommended] to Prevent and Recover from Ransomware.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Ransomware",
+      "head_type": "ThreatOrAttack",
+      "relation": "REQUIRES",
+      "tail": "Automatically update operating systems, software and apps",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Automatically update your operating systems, software and apps [is recommended] to Prevent and Recover from Ransomware.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Ransomware",
+      "head_type": "ThreatOrAttack",
+      "relation": "REQUIRES",
+      "tail": "Require multi-factor authentication to access services",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "require multi-factor authentication to access services [is recommended] to Prevent and Recover from Ransomware.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Operating system",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Updated regularly to ensure most secure version",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "your operating system is the most important piece of software on your computer... therefore needs to be updated regularly to ensure you are always using the most secure version.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Backup storage device",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Safely disconnecting and removing after each backup",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Safely disconnecting and removing your backup storage device after each backup will ensure it remains secure during a cyber incident.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Backups",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Testing regularly by attempting to restore data",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Test your backups regularly by attempting to restore data.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "One backup",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Kept disconnected from your device, preferably offsite",
+      "tail_type": "Other",
+      "supporting_sentence": "Always keep at least one backup disconnected from your device, preferably at an offsite location in case of natural disasters or theft.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Backup",
+      "head_type": "AssetOrData",
+      "relation": "RELATED_TO",
+      "tail": "External storage device or to the cloud",
+      "tail_type": "AssetOrData",
+      "supporting_sentence": "A backup is a digital copy of your business’ most important information e.g. customer details and financial records. This can be saved to an external storage device or to the cloud.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Business data",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Protection from cybercriminals",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Data held by your business is an attractive target to cybercriminals. . . use the recommendations in this guide to help protect your data from being accessed by cybercriminals.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Small businesses",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Consulting with an IT professional",
+      "tail_type": "Organization",
+      "supporting_sentence": "If you have questions about this advice or cyber security more broadly, we recommend you speak to an IT professional or a trusted advisor.",
+      "source_document": "ACSC_Small_Business_Cyber_Security_Guide_V6.pdf"
+    },
+    {
+      "head": "Small businesses",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Consulting with a legal professional (for legal obligations)",
+      "tail_type": "Organization",
+      "supporting_sentence": "Consult with a legal professional if you are unsure [of legal obligations for data].",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Small businesses",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Understanding obligations for protecting personal information",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Know your obligations for protecting data. Some small businesses may have legal obligations for handling personal information they collect.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Cyber security is important",
+      "head_type": "Other",
+      "relation": "APPLIES_TO",
+      "tail": "Australian SMBs",
+      "tail_type": "Organization",
+      "supporting_sentence": "Australian SMBs know cyber security is important regardless of how they rate their understanding of cyber security.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Ransomware attacks",
+      "head_type": "ThreatOrAttack",
+      "relation": "LEADS_TO",
+      "tail": "Hackers demanding money for unlocking data",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "There have been many reports of systems and even backups being maliciously encrypted, with hackers demanding hundreds and thousands of dollars for the ‘privilege’ of unlocking important data and systems.",
+      "source_document": "cybersecurity-tips-for-small-business.pdf"
+    },
+    {
+      "head": "NAS or other servers",
+      "head_type": "AssetOrData",
+      "relation": "TARGETS",
+      "tail": "Cybercriminals",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "These devices are common targets for cybercriminals because they often store important files or perform important functions.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Cyber security practices",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Ongoing learning (monitoring)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Cyber risks and cyber security best practices change over time, so learning must be ongoing with cyber risks and behaviours continually monitored.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "ACSC guidance",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Easy to implement",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Guidance for Australian SMBs must be comprised of effective, low cost tips (in both time and money) that are easy to implement.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Automating updates and backups",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Cyber security practices decay over time",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "This will ensure cyber security practices are both implemented and maintained over time.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Case studies (in advice)",
+      "head_type": "ControlOrMeasure",
+      "relation": "CAUSES",
+      "tail": "Better assess cyber risks and prioritise practices",
+      "tail_type": "Other",
+      "supporting_sentence": "Case studies should be used in cyber security advice because it will help Australian SMBs to better assess cyber risks and prioritise cyber security practices.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Time poor SMBs",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Guidance that covers automating updates and backups",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Guidance must also provide options that make it easier for time poor SMBs to stay on top of things, for example guidance that covers automating updates and backups.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "ASD’s ACSC Small Business Cyber Security Guide",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "Password and passphrase best practice",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "This guidance is taken from the ASD’s ACSC Small Business Cyber Security Guide [and provides] PASSWORD AND PASSPHRASE BEST PRACTICE.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "IT asset inventory",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Difficulty in tracking technology endpoints",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Maintaining an asset list facilitates efficient tracking and awareness of the technology endpoints present in your business.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Cyber risk",
+      "head_type": "Other",
+      "relation": "APPLIES_TO",
+      "tail": "Operational risk",
+      "tail_type": "Other",
+      "supporting_sentence": "Cyber risk, despite its prominence and velocity, is still an operational risk that should fit within an SME’s existing approach to risk management.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "SME Director",
+      "head_type": "Organization",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Setting tone from the top (culture of cyber resilience)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Directors have a key role in setting a tone from the [top] [to build a culture of cyber resilience].",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Best practice backups",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Separate storage location",
+      "tail_type": "Other",
+      "supporting_sentence": "Best practice is for these back-ups to be in a separate location which can be accessed when the original form [is compromised].",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Cybersecurity awareness training",
+      "head_type": "ControlOrMeasure",
+      "relation": "RELATED_TO",
+      "tail": "Employee good practices",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Employees with good cyber security practices are your first line of defence against cyber attacks.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "ACSC",
+      "head_type": "GovernmentBody",
+      "relation": "RELATED_TO",
+      "tail": "ANZ",
+      "tail_type": "Organization",
+      "supporting_sentence": "ANZ in collaboration with the Australian Cyber Security Centre (ACSC) is set to play a joint role in securing the digital future for the Small and Medium Businesses.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Phishing",
+      "head_type": "ThreatOrAttack",
+      "relation": "RELATED_TO",
+      "tail": "Malware/Ransomware (common understood risks)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Malware, Phishing and Ransomware are the most commonly understood cyber security risks.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Office of the Australian Information Commissioner (OAIC)",
+      "head_type": "GovernmentBody",
+      "relation": "RELATED_TO",
+      "tail": "Legal obligations for personal information",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "Read the Office of the Australian Information Commissioner’s guide for small businesses to learn more, available at oaic.gov.au.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Notifiable Data Breaches (NDB) scheme",
+      "head_type": "PolicyOrRegulation",
+      "relation": "APPLIES_TO",
+      "tail": "Organizations subject to material data breach",
+      "tail_type": "Organization",
+      "supporting_sentence": "The Notifiable Data Breaches (NDB) scheme – requiring an organisation to notify affected individuals and the Office of the Australian Information Commissioner (OAIC) as soon as practicable of a material data breach.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Australian Privacy Principle 11 (APP 11)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Active measures to ensure the security of personal information",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Australian Privacy Principle 11... requiring an organisation to take active measures to ensure the security of personal information it holds.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Cyber Incident Response Planning",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Preparedness",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "How well an organisation can respond to a cyber security incident depends on their preparedness.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Security issues with outsourced services",
+      "head_type": "Vulnerability",
+      "relation": "LEADS_TO",
+      "tail": "Significant impact to your business",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Security issues with these services or providers could have a significant impact to your business.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Outsourced services",
+      "head_type": "Organization",
+      "relation": "RELATED_TO",
+      "tail": "Managed Service Provider (MSP)",
+      "tail_type": "Organization",
+      "supporting_sentence": "Modern businesses often outsource multiple services. For example, using a Managed Service Provider to maintain their IT.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "ASD’s ACSC Quick Wins Guides",
+      "head_type": "ControlOrMeasure",
+      "relation": "RELATED_TO",
+      "tail": "Quick Wins for your Website",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The ACSC has additional resources available for website owners. Search for these resources on cyber.gov.au: Quick Wins for your Website.",
+      "source_document": "ACSC_Small_Business_Cyber_Security_Guide_V6.pdf"
+    },
+    {
+      "head": "ASD’s ACSC Step-by-Step Guides",
+      "head_type": "ControlOrMeasure",
+      "relation": "RELATED_TO",
+      "tail": "Backing Up & Restoring Your Computer (For Mac)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Step-by-Step Guide Backing Up & Restoring Your Computer (For Mac).",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "ASD’s ACSC Small Business Cyber Security Guide",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "Low complexity content",
+      "tail_type": "Other",
+      "supporting_sentence": "Content Complexity SIMPLE # Small business cyber security guide.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "ACSC",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Providing detailed advice on backups",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "For detailed advice on backing up your business, read our advice for backups, available at cyber.gov.au/backups.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "ACSC",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Cyber Supply Chain Guidance",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "For detailed advice on cyber supply chain risk management read our Cyber Supply Chain Guidance on cyber.gov.au.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Cybercriminals",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Website login",
+      "tail_type": "AssetOrData",
+      "supporting_sentence": "secure your website login with multi-factor authentication or a strong password.",
+      "source_document": "ACSC_Small_Business_Cyber_Security_Guide_V6.pdf"
+    },
+    {
+      "head": "Antivirus software",
+      "head_type": "ControlOrMeasure",
+      "relation": "RELATED_TO",
+      "tail": "ACSC advice on alternative products and options",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "For alternative products and options, read our advice on antivirus software, by searching antivirus on cyber.gov.au.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Password manager",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Create and store unique passwords or passphrases",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Use a password manager to create and store unique passwords or passphrases for each of your important accounts.",
+      "source_document": "Small business cyber security checklist (June 2023).pdf"
+    },
+    {
+      "head": "Virus",
+      "head_type": "ThreatOrAttack",
+      "relation": "CAUSES",
+      "tail": "Damage/stealing personal information",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "A program designed to cause damage, steal personal information, modify data, send email, display messages or a combination of these actions.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Ransomware/Viruses",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Backup devices",
+      "tail_type": "AssetOrData",
+      "supporting_sentence": "Do not connect your backup to devices that are infected with ransomware or viruses.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "MFA",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Combination of something you know and something you have",
+      "tail_type": "Other",
+      "supporting_sentence": "Multi-factor authentication (MFA) typically requires a combination of: something you know (password/passphrase, PIN, secret question) [and] something you have (e.g. phone or token).",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Business data",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Understanding responsibilities to protect it",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Understand the data your business holds and your responsibilities to protect it.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "Small businesses",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Reading ACSC resources on website security",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Read through the Australian Cyber Security Centre (ACSC) resources on website security.",
+      "source_document": "Small business cyber security checklist (June 2023).pdf"
+    }
+  ]
+}

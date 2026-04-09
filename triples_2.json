@@ -1,0 +1,1210 @@
+{
+  "triples": [
+    {
+      "head": "Australian Small Businesses (SMBs)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack of time, resources and expertise",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Australian small businesses consistently express concern over their lack of time, resources and expertise to uplift their cyber security.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Cyber Health-Check Program",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Lack of expertise/resources",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "The Government will create a cyber health-check program that will offer a free, tailored assessment of cyber security maturity to small and medium businesses.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Cyber Wardens Program",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Cyber security risks and threats",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "The health check program will support the delivery of the existing Cyber Wardens Program for small businesses, which allows them to better understand cyber security risks and build in house capability to manage cyber threats.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Cybercrime",
+      "head_type": "ThreatOrAttack",
+      "relation": "LEADS_TO",
+      "tail": "Large-scale harm to Australian economy and national security",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Cybercrime, including ransomware and cyber extortion, can cause large-scale harm to the Australian economy and national security.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Malicious state actors and cybercriminals",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Critical services like telecommunication networks and health systems",
+      "tail_type": "Organization",
+      "supporting_sentence": "Such attacks often require minimal technical expertise and few resources, yet can have a major impact – potentially crippling core business functions and critical services like our telecommunication networks, health system, food supply chains and educational institutions.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Australian Federal Police (AFP)",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Investigating and disrupting criminal syndicates (Operation Aquila)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The Government will expand the AFP’s contribution to Operation Aquila, the AFP- and ASD-led joint standing operation aimed at investigating and disrupting criminal syndicates.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Ransomware playbook",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Unclear guidance on how to respond to ransom demands",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "The Government will build a ransomware playbook. This playbook will provide clear guidance to businesses and citizens on how to prepare for, deal with, and bounce back from ransom demands.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Digital ID program",
+      "head_type": "PolicyOrRegulation",
+      "relation": "MITIGATES",
+      "tail": "Need for people to share sensitive personal information",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "The Government is continuing to develop the Digital ID program... to reduce the need for people to share sensitive personal information with government and businesses to access services online.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Digital ID System",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Best-practice cyber security standards (Essential Eight/ISO)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "the expanded program will continue to adopt best-practice cyber security standards such as ISO/IEC standards, the Australian Government’s Protective Security Policy Framework, and the Australian Cyber Security Centre’s Essential Eight.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Products and services without built-in security",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "Vulnerabilities malicious actors can easily exploit",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Products and services without built-in security can present vulnerabilities that malicious actors can easily exploit, potentially undermining public trust in technology.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Australian Government",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Developing framework for assessing national security risks of vendor products",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The Government will develop a framework for assessing the national security risks presented by vendor products and services operating within and entering the Australian economy.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Sensitive and critical datasets",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Identification and protection of national significance",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The Government will identify Australia’s most sensitive and critical datasets across the economy – particularly those that are not appropriately protected under existing regulations, yet are crucial to our national interests.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Australian Government entities",
+      "head_type": "GovernmentBody",
+      "relation": "REQUIRES",
+      "tail": "Implementation of ASD’s Essential Eight strategies",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "many government systems do not yet meet the ASD’s Essential Eight strategies for mitigating cyber security incidents. To uplift our collective cyber security, the Government must itself adopt cyber best practices.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Critical infrastructure",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Strengthened cyber security obligations and compliance",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "To achieve our 2030 vision, the Australian Government will: strengthen cyber security obligations and compliance for critical infrastructure.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Managed service providers",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Clarified cyber security obligations",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The Government will also seek to clarify cyber security obligations for managed service providers, aligning closely with data protection initiatives established under Shield 2.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "ASD’s Essential Eight mitigation strategies",
+      "head_type": "PolicyOrRegulation",
+      "relation": "MITIGATES",
+      "tail": "Risk of compromise (government systems)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "This approach to the uplift of government systems will be designed to reduce the risk of compromise, and help to prevent the most common techniques used by malicious cyber actors.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Highly sophisticated nation states and state-sponsored actors",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Governments and critical infrastructure providers",
+      "tail_type": "Organization",
+      "supporting_sentence": "Highly sophisticated nation states and state-sponsored actors continue to target governments and critical infrastructure providers.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Small businesses",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Especially vulnerable to cyber security threats",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "At the other end of the scale, SMEs are especially vulnerable to cyber security threats.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Australian Government",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Providing $8.3 million Cyber Security Connect and Protect Program",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "This Strategy includes an $8.3 million Cyber Security Connect and Protect Program, which will assist SMEs through tailored advice and assistance from trusted sources.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Government and large businesses",
+      "head_type": "Organization",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Assisting small businesses to upgrade their cyber security",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Government and large businesses will assist small businesses to upgrade their cyber security and grow their cyber security awareness.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Threat-blocking technology",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Known malicious cyber threats reaching Australian consumers and businesses",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Supporting the roll-out of threat-blocking technology will prevent known malicious cyber threats from reaching Australian consumers and businesses.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "ASD",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Providing Australia’s major telecommunications providers with threat information",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "the Australian Government will invest $12.5 million for the ACSC to provide Australia’s major telecommunications providers with information about known malicious websites, malware, phishing campaigns and online scams to boost providers’ ability to block threats at scale.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Voluntary Code of Practice: Securing the Internet of Things for Consumers",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Cyber security features expected of internet-connected devices",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "the Australian Government will release the voluntary Code of Practice: Securing the Internet of Things for Consumers, to inform businesses about the cyber security features expected of internet-connected devices available in Australia.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Cyber Security National Workforce Growth Program",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Grow cyber security skills at all stages of education",
+      "tail_type": "Other",
+      "supporting_sentence": "The Cyber Security National Workforce Growth Program seeks to grow cyber security skills at all stages of education, including primary, secondary and tertiary.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Cyber security incidents",
+      "head_type": "ThreatOrAttack",
+      "relation": "CAUSES",
+      "tail": "Human error",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Most cyber security incidents have an element of human error.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Cyber supply chain risk management activities",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Identifying jurisdictional, governance, privacy and security risks",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "This includes identifying and managing jurisdictional, governance, privacy and security risks associated with the use of suppliers.",
+      "source_document": "Information security manual (June 2025).pdf"
+    },
+    {
+      "head": "Outsourced cloud services",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Subject to lawful and covert data collection (offshore)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "For example, outsourced cloud services may be located offshore and subject to lawful and covert data collection without their customers’ knowledge.",
+      "source_document": "Information security manual (June 2025).pdf"
+    },
+    {
+      "head": "Data",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Encryption at rest and in transit",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Data is encrypted at rest and in transit.",
+      "source_document": "Information security manual (June 2025).pdf"
+    },
+    {
+      "head": "ASD",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Development of new and updated cybersecurity advice/capabilities/techniques",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "ASD utilises this understanding [from incident reports] to assist in the development of new and updated cybersecurity advice, capabilities, and techniques to better prevent and respond to evolving cyberthreats.",
+      "source_document": "Information security manual (June 2025).pdf"
+    },
+    {
+      "head": "Network segmentation and segregation",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Malicious actors easily propagating throughout networks",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Network segmentation and segregation is one of the most effective controls in preventing malicious actors from easily propagating throughout networks once initial access has been gained.",
+      "source_document": "Information security manual (June 2025).pdf"
+    },
+    {
+      "head": "Cybercriminals",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "Australian Small Businesses (SMBs)",
+      "tail_type": "Organization",
+      "supporting_sentence": "cyber criminals are increasingly targeting Australian small businesses.",
+      "source_document": "Research-Report-Building-a-culture-of-cyber-safety-in-Australian-small-businesses.pdf"
+    },
+    {
+      "head": "ASD’s Essential Eight Mitigation Strategies",
+      "head_type": "PolicyOrRegulation",
+      "relation": "MITIGATES",
+      "tail": "Cost of responding to a cyber security incident",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "implementing the Essential Eight Mitigation Strategies can be more cost-effective for SMBs in terms of time, money and effort than having to respond to a cyber security incident.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Australian SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack of dedicated staff with an IT security focus",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "These barriers include a lack of dedicated staff with an IT security focus, the complex field of cyber security, challenges in understanding and implementing security measures.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "SMBs that outsource",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Gaps in owner’s cyber security knowledge",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Outsourcing may lead to gaps in the owner’s cyber security knowledge about which security measures are being implemented to protect their business.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Technical advice (ACSC)",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Prioritisation so SMBs know which practices to implement first",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Technical advice must be prioritised so that Australian SMBs know which cyber security practices to implement first for best results.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Guidance for Australian SMBs",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Effective, low cost tips that are easy to implement",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Guidance for Australian SMBs must be comprised of effective, low cost tips (in both time and money) that are easy to implement.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Malware, Phishing, and Ransomware",
+      "head_type": "ThreatOrAttack",
+      "relation": "RELATED_TO",
+      "tail": "Most commonly understood cyber security risks (by SMBs)",
+      "tail_type": "Other",
+      "supporting_sentence": "Data shows that Malware, Phishing and Ransomware are the most commonly understood cyber security risks.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Cyber insurers",
+      "head_type": "Organization",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Help businesses understand how to improve their cybersecurity",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Cyber insurers... could be well-placed to help businesses understand how to improve their cybersecurity.",
+      "source_document": "Enhancing-Cyber-Resilience-Through-Insurance.pdf"
+    },
+    {
+      "head": "SMEs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Underestimate cyber risk",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "SMEs frequently believing their organization is too small to be a lucrative target, despite growing evidence to the contrary.",
+      "source_document": "Enhancing-Cyber-Resilience-Through-Insurance.pdf"
+    },
+    {
+      "head": "Cybersecurity practices guidance",
+      "head_type": "PolicyOrRegulation",
+      "relation": "VULNERABILITY",
+      "tail": "Littered with different guidance that can overwhelm small businesses",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "The landscape for SMEs is therefore littered with different guidance that can overwhelm small or under-resourced security teams.",
+      "source_document": "Enhancing-Cyber-Resilience-Through-Insurance.pdf"
+    },
+    {
+      "head": "Cyber Security Handbook",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "ASD’s Essential Eight maturity model",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "this guide is intended to complement the detailed Australian Signals Directorate’s (ASD) Essential Eight maturity model.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "NDB scheme",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Notify affected individuals and the OAIC of a material data breach",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The Notifiable Data Breaches (NDB) scheme – requiring an organisation to notify affected individuals and the Office of the Australian Information Commissioner (OAIC) as soon as practicable of a material data breach.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Australian Privacy Principle 11 (APP 11)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Take active measures to ensure the security of personal information",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Australian Privacy Principle 11... requiring an organisation to take active measures to ensure the security of personal information it holds.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Unpatched vulnerabilities",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "A large percentage of breaches",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "A large percentage of breaches are due to vulnerabilities that have not been patched, or vulnerabilities that have.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Cyber Security Incident Response Plan",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Minimising the impact of an incident",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Having a documented Cyber Security Incident Response Plan is necessary for an organisation to respond swiftly, efficiently, and effectively to any incident, thereby minimising the impact.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Small business directors",
+      "head_type": "Organization",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Oversight of cyber security risks (as part of fiduciary duties)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "director duties are relevant to the oversight of cyber security risks, an SME director should ensure they are aware of the legal obligations.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Ransomware incidents",
+      "head_type": "ThreatOrAttack",
+      "relation": "REQUIRES",
+      "tail": "Reporting to the ACSC",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "victims are encouraged to report ransomware incidents to the ACSC at cyber.gov.au. Sharing information about incidents helps to protect other Australian businesses.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Paying a ransom",
+      "head_type": "ControlOrMeasure",
+      "relation": "LEADS_TO",
+      "tail": "Increased likelihood of being targeted again",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Paying a ransom does not guarantee a victim’s files will be restored... It also increases the likelihood of a victim being targeted again.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "ASD’s ACSC Small Business Cyber Security Guide",
+      "head_type": "PolicyOrRegulation",
+      "relation": "APPLIES_TO",
+      "tail": "Small and medium businesses",
+      "tail_type": "Organization",
+      "supporting_sentence": "The language is clear, the actions are simple, and the guidance is tailored for small and medium businesses.",
+      "source_document": "small-business-cyber-security-guide.pdf"
+    },
+    {
+      "head": "Ransomware reporting for businesses (Proposed)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Information on attack scope, timeframe, entry point, type, and data targeted",
+      "tail_type": "AssetOrData",
+      "supporting_sentence": "Engineers Australia supports the Department’s suggested list of potential information to be reported as the main goal is to define the scope of the attack, timeframe under which it happened, entry point, type of attack, and what data was targeted.",
+      "source_document": "Engineers-Australia-Submission-2023-2030-Australian-Cyber-Security-Strategy-Legislative-Reforms.pdf"
+    },
+    {
+      "head": "‘No-fault’ and ‘no-liability’ protection principles",
+      "head_type": "PolicyOrRegulation",
+      "relation": "CAUSES",
+      "tail": "Major impact on businesses’ confidence to report ransomware incidents",
+      "tail_type": "Other",
+      "supporting_sentence": "Engineers Australia considers it likely that ‘no-fault’ and ‘no-liability’ protection principles would have a major impact on businesses’ confidence to report ransomware or cyber extortion incidents.",
+      "source_document": "Engineers-Australia-Submission-2023-2030-Australian-Cyber-Security-Strategy-Legislative-Reforms.pdf"
+    },
+    {
+      "head": "SOCI Act",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Consideration of mandating forced deletion of personal/sensitive information",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The SOCI Act should consider mandating the forced deletion of personal and/or sensitive information kept for more than a reasonable amount of time.",
+      "source_document": "Engineers-Australia-Submission-2023-2030-Australian-Cyber-Security-Strategy-Legislative-Reforms.pdf"
+    },
+    {
+      "head": "Reducing the amount of critical data stored",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Attractiveness of a business as a cyber target",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Reducing the amount of critical data stored would be an easy way to both reduce the attractiveness of a business as a cyber target, and lower the impact should any cyber incidents happen.",
+      "source_document": "Engineers-Australia-Submission-2023-2030-Australian-Cyber-Security-Strategy-Legislative-Reforms.pdf"
+    },
+    {
+      "head": "ASD and Cyber Coordinator",
+      "head_type": "GovernmentBody",
+      "relation": "REQUIRES",
+      "tail": "Limited use obligation on cyber incident information",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "Engineers Australia strongly supports the limited use obligation on the Australian Signals Directorate (ASD) and National Cyber Security Coordinator (Cyber Coordinator).",
+      "source_document": "Engineers-Australia-Submission-2023-2030-Australian-Cyber-Security-Strategy-Legislative-Reforms.pdf"
+    },
+    {
+      "head": "Mandatory standards (Australia)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "IoT devices supply chain protection",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Protecting the supply chain of IoT devices in Australia will require the participation of manufacturers, subcontractors, software developers, importers, distributors and end-users.",
+      "source_document": "Engineers-Australia-Submission-2023-2030-Australian-Cyber-Security-Strategy-Legislative-Reforms.pdf"
+    },
+    {
+      "head": "Lack of knowledge (in SMEs)",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "Lack of security opening the door to cyber-attacks",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Lack of knowledge is too often the key issue leading to a lack of security opening the door to cyber-attacks.",
+      "source_document": "Engineers-Australia-Submission-2023-2030-Australian-Cyber-Security-Strategy-Legislative-Reforms.pdf"
+    },
+    {
+      "head": "Australian Government",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Providing assistance and advice to victims of malicious cyber activity",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "As technical cyber security leads for the Australian Government, the ACSC is uniquely positioned to provide assistance and advice to victims of malicious cyber activity, including incident response services where appropriate.",
+      "source_document": "cyber-security-incident-reporting.pdf"
+    },
+    {
+      "head": "Cyber security incident reports",
+      "head_type": "Other",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Identifying emerging cyber campaign targeting Australia",
+      "tail_type": "Other",
+      "supporting_sentence": "This information could help to identify an emerging cyber campaign targeting Australia and better understand the cyber threat to Australia, critical infrastructure, and specific sectors.",
+      "source_document": "cyber-security-incident-reporting.pdf"
+    },
+    {
+      "head": "Critical infrastructure asset owners and operators",
+      "head_type": "Organization",
+      "relation": "REQUIRES",
+      "tail": "Reporting cyber security incidents",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Critical infrastructure asset owners and operators may also be subject to mandatory reporting requirements from a security regulator.",
+      "source_document": "cyber-security-incident-reporting.pdf"
+    },
+    {
+      "head": "AI, ML, and LLMs",
+      "head_type": "Other",
+      "relation": "MITIGATES",
+      "tail": "Increased vulnerability of Australian SMEs to cyber threats",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Embracing transformative technologies such as Artificial Intelligence (AI), Machine Learning (ML) and Large Language Models (LLMs) can potentially strengthen cyber security policies for Australian SMEs.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "GPT-4 model",
+      "head_type": "Other",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Formulating cyber security policies for SMEs",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The GPT-4 model was identified as the most potent AI model for formulating cyber security policies for SMEs.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "Small size and limited financial resources (SMEs)",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "Susceptibility to cyber threats",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "This susceptibility arises from a combination of factors including a shortage of cybersecurity knowledge and resources... limited financial resources, and the absence of resident IT staff.",
+      "source_document": "2306.02612v1 (1).pdf"
+    },
+    {
+      "head": "Increased digitalization",
+      "head_type": "Other",
+      "relation": "CAUSES",
+      "tail": "Heightens cybersecurity risks",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "As indicated under Action 3, increased digitalization heightens cybersecurity risks; thus, it is critical that robust requirements are in place.",
+      "source_document": "2024 GPFI MSME Finance Report_V4_0.pdf"
+    },
+    {
+      "head": "Governments",
+      "head_type": "GovernmentBody",
+      "relation": "REQUIRES",
+      "tail": "Robust risk management to address cybersecurity risks",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Governments should require robust risk management to address issues such as cybersecurity risks, and they should implement robust data privacy and protection frameworks.",
+      "source_document": "2024 GPFI MSME Finance Report_V4_0.pdf"
+    },
+    {
+      "head": "Robust data privacy and protection frameworks",
+      "head_type": "PolicyOrRegulation",
+      "relation": "APPLIES_TO",
+      "tail": "Personal information or data",
+      "tail_type": "AssetOrData",
+      "supporting_sentence": "Overall, data privacy and protection frameworks apply to individuals, as they focus on personal information or data, regardless of whether this is generated for personal or business reasons.",
+      "source_document": "2024 GPFI MSME Finance Report_V4_0.pdf"
+    },
+    {
+      "head": "Digital IDs",
+      "head_type": "AssetOrData",
+      "relation": "RELATED_TO",
+      "tail": "Digital Public Infrastructure (DPI)",
+      "tail_type": "Other",
+      "supporting_sentence": "Three sets of DPI are considered critical: digital ID, digital payments, and data exchange in the financial sector.",
+      "source_document": "2024 GPFI MSME Finance Report_V4_0.pdf"
+    },
+    {
+      "head": "Cybersecurity policy and guidelines in Australia",
+      "head_type": "PolicyOrRegulation",
+      "relation": "VULNERABILITY",
+      "tail": "Complicated and confusing",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Cyber security policy and guidelines in Australia are complicated and confusing; making templated policies and procedures available freely or cheaply to SME’s would assist in helping them in navigating the mine-field of cyber security information.",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "Templated policies and procedures",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Complicated and confusing cyber security policy",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "Cyber security policy and guidelines in Australia are complicated and confusing; making templated policies and procedures available freely or cheaply to SME’s would assist in helping them in navigating the mine-field of cyber security information.",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "Cybercrime",
+      "head_type": "ThreatOrAttack",
+      "relation": "LEADS_TO",
+      "tail": "Financial losses from fraud and ransoms",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "There are direct and indirect costs to cybercrime victims including: Financial losses from fraud and ransoms.",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "Failure to report mandatory data breaches",
+      "head_type": "Vulnerability",
+      "relation": "LEADS_TO",
+      "tail": "Fines of up to $1.8 Million",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Fines of up to $1.8 Million from failure to report mandatory data breaches to Office of the Australian Information Commissioner (OAIC).",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "ASD’s ACSC Small Business Cyber Security Guide",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "ASD’s Essential Eight maturity model",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "This guide is intended to complement the detailed Australian Signals Directorate’s (ASD) Essential Eight maturity model.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "Australian Government",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Providing a single source of truth for small business cyber security",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "the Government should seek to ensure it provides a single source of truth that small business can rely on.",
+      "source_document": "sub165-productivity.pdf"
+    },
+    {
+      "head": "Revision of the 2020 Cyber Security Strategy",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Specifically consider barriers to small businesses improving cyber security",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Revision of the 2020 Cyber Security Strategy should specifically consider the barriers to small businesses improving their cyber security systems and processes.",
+      "source_document": "sub165-productivity.pdf"
+    },
+    {
+      "head": "Introducing expectations of SaaS providers",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Disproportionate burden of cyber threats on small businesses",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Consideration should be given to introducing expectations of SaaS providers to build-in cyber security measures that improve software security and reduce the disproportionate burden of cyber threats on small businesses.",
+      "source_document": "sub165-productivity.pdf"
+    },
+    {
+      "head": "Non-prescriptive mandates",
+      "head_type": "PolicyOrRegulation",
+      "relation": "CAUSES",
+      "tail": "Cybersecurity evolves with critical technologies",
+      "tail_type": "Other",
+      "supporting_sentence": "Creating non-prescriptive mandates that nonetheless encourage organizations to analyze the probability and severity of threats in line with technological realities is important for ensuring cybersecurity evolves with critical technologies.",
+      "source_document": "2021-08-27-aus-cyber-regs-incentives.pdf"
+    },
+    {
+      "head": "1-10-60 Rule",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Detect malicious cyber activity within one minute",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "This concept challenges enterprises to detect malicious cyber activity within one minute, have a human investigate that detection within 10 minutes, and remediate or isolate any compromised assets within 60 minutes.",
+      "source_document": "2021-08-27-aus-cyber-regs-incentives.pdf"
+    },
+    {
+      "head": "Proposed legislative updates (cybersecurity)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Focus on principles rather than prescriptive requirements",
+      "tail_type": "Other",
+      "supporting_sentence": "we recommend and emphasize that any proposed legislative updates focus on principles rather than prescriptive requirements and include a mechanism for periodic revisions.",
+      "source_document": "2021-08-27-aus-cyber-regs-incentives.pdf"
+    },
+    {
+      "head": "Business failure to meet data protection obligations",
+      "head_type": "Vulnerability",
+      "relation": "CAUSES",
+      "tail": "Risk to the privacy of individuals",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "the failure of a business of any size... to meet data protection obligations may pose a risk to the privacy of individuals.",
+      "source_document": "2021-08-27-aus-cyber-regs-incentives.pdf"
+    },
+    {
+      "head": "Collaboratively-designed small business health check trust mark",
+      "head_type": "ControlOrMeasure",
+      "relation": "LEADS_TO",
+      "tail": "Increasing consumer confidence",
+      "tail_type": "Other",
+      "supporting_sentence": "The adoption of a collaboratively-designed small business health check trust mark could be of benefit, as small businesses may use it from a marketing perspective, increasing consumer confidence in their offerings.",
+      "source_document": "2021-08-27-aus-cyber-regs-incentives.pdf"
+    },
+    {
+      "head": "Cyber crime incidents",
+      "head_type": "ThreatOrAttack",
+      "relation": "REQUIRES",
+      "tail": "Reporting through the ReportCyber website",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Reporting cyber crime incidents through the ReportCyber website is an important way for the community to help us know the full extent to which cyber criminals are harming Australians.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "ASD’s Essential Eight",
+      "head_type": "PolicyOrRegulation",
+      "relation": "APPLIES_TO",
+      "tail": "Australian Government agencies",
+      "tail_type": "GovernmentBody",
+      "supporting_sentence": "Australian Government agencies... will strengthen their cyber security and implement the ACSC’s Essential Eight mitigation strategies.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Cyber Supply Chain Guidance (ACSC)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Cyber supply chain risk management",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "For detailed advice on cyber supply chain risk management read our Cyber Supply Chain Guidance on cyber.gov.au.",
+      "source_document": "Small business cyber security guide (June 2023).pdf"
+    },
+    {
+      "head": "ACSC Cyber Alert Service",
+      "head_type": "ControlOrMeasure",
+      "relation": "RELATED_TO",
+      "tail": "ASD’s ACSC Protecting Your Business and Employees",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "ASD’s ACSC Cyber Resources for Small Businesses, ASD’s ACSC Small Business Security Guide, ASD’s ACSC Protecting Your Business and Employees, [and] ASD’s ACSC Cyber Alert Service [are listed as resources].",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "ASD",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "ASD Essential Eight (baseline recommendation)",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "The Essential Eight is the Australian Signals Directorate’s (ASD) prioritised list of mitigation strategies to assist businesses in protecting their systems against a range of adversaries.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "ASD Essential Eight",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Uplift of government systems",
+      "tail_type": "GovernmentBody",
+      "supporting_sentence": "This approach to the uplift of government systems will be designed to reduce the risk of compromise...",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "ASD’s Essential Eight",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "Protective Security Policy Framework (PSPF)",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "We will implement defined controls across our networks that will be consolidated into the Australian Government Information Security Manual, and enabled through the Protective Security Policy Framework.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Australian Government",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Establishing a new process for conducting lessons-learned reviews of significant cyber incidents",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The Government will establish a new process for conducting lessons-learned reviews of significant cyber incidents.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Cyber Incident Review Board (CIRB)",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Issuing advice to government and industry on how to avoid recurrence of incidents",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The purpose of a CIRB should be to understand the process by which the incident happened and issue advice to government and industry on how to avoid recurrence.",
+      "source_document": "Engineers-Australia-Submission-2023-2030-Australian-Cyber-Security-Strategy-Legislative-Reforms.pdf"
+    },
+    {
+      "head": "Government and large businesses",
+      "head_type": "Organization",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Providing SMEs with cyber security information and tools as part of ‘bundles’ of secure services",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The Australian Government will work with large businesses and service providers to provide SMEs with cyber security information and tools as part of ‘bundles’ of secure services (such as threat blocking, antivirus, and cyber security awareness training).",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Cyber extortion",
+      "head_type": "ThreatOrAttack",
+      "relation": "REQUIRES",
+      "tail": "Ransomware playbook (guidance on preparation and response)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The Government will build a ransomware playbook... to prepare for, deal with, and bounce back from ransom demands.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Australian Government’s Digital ID System",
+      "head_type": "PolicyOrRegulation",
+      "relation": "MITIGATES",
+      "tail": "Identity theft and fraud",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "This will mean fewer records of individuals’ ID data and documents held by commercial and government organisations – reducing the risks and impact of identity theft and fraud.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Ransomware business model",
+      "head_type": "ThreatOrAttack",
+      "relation": "REQUIRES",
+      "tail": "Disruption by Australian Government",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "To make Australia a hard target for ransomware, we must disrupt the ransomware business model.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Health sector",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lowest cyber maturities across industry",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "the health sector also has one of the lowest cyber maturities across industry.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Threat Sharing Acceleration Fund",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Building capability of Australia’s health system to identify threats",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "This pilot will focus on building the capability of Australia’s health system to identify threats and share intelligence between medical service providers.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Foreign owned suppliers operating in Australia",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Subject to a foreign government’s lawful access to data",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Foreign owned suppliers operating in Australia may be subject to a foreign government’s lawful access to data belonging to their customers.",
+      "source_document": "Information security manual (June 2025).pdf"
+    },
+    {
+      "head": "Critical online services",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Segregation from other online services more likely to be targeted by DoS attacks",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Critical online services are segregated from other online services that are more likely to be targeted as part of denial-of-service attacks.",
+      "source_document": "Information security manual (June 2025).pdf"
+    },
+    {
+      "head": "Systems of National Significance",
+      "head_type": "AssetOrData",
+      "relation": "REQUIRES",
+      "tail": "Enhanced Cyber Security Obligations",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "Systems of National Significance... Framework elements: Enhanced Cyber Security Obligations; Positive Security Obligation; Government Assistance.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "ASD’s Essential Eight",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "Australian Government Information Security Manual",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "To protect the Australian Government’s data and digital estate, we will build on the best practice principles established within ASD’s Essential Eight. We will also implement defined controls across our networks that will be consolidated into the Australian Government Information Security Manual.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Transfer costs (CGT and stamp duty)",
+      "head_type": "Other",
+      "relation": "CAUSES",
+      "tail": "Inhibitor to restructuring an established business",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "advisors considered transfer costs (CGT and stamp duty) as a frequently mentioned inhibitor to restructuring an established business.",
+      "source_document": "16.pdf"
+    },
+    {
+      "head": "Client education",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Burden of complexity and compliance costs (for restructuring)",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Client education, seeking advice, and reducing the number of entities adopted by a single business were some of the techniques used by advisors to lessen the burden of complexity and compliance costs.",
+      "source_document": "16.pdf"
+    },
+    {
+      "head": "ASD",
+      "head_type": "GovernmentBody",
+      "relation": "RELATED_TO",
+      "tail": "Australian Cyber Security Centre (ACSC)",
+      "tail_type": "GovernmentBody",
+      "supporting_sentence": "Engineers Australia strongly supports the limited use obligation on the Australian Signals Directorate (ASD) and National Cyber Security Coordinator (Cyber Coordinator)... It will build on existing resources available through the... ASD’s Australian Cyber Security Centre (ACSC).",
+      "source_document": "Engineers-Australia-Submission-2023-2030-Australian-Cyber-Security-Strategy-Legislative-Reforms.pdf"
+    },
+    {
+      "head": "Cyber crime",
+      "head_type": "ThreatOrAttack",
+      "relation": "LEADS_TO",
+      "tail": "Operational disruption",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Cybercrime can have significant impacts... including: Operational disruption.",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "SMEs",
+      "head_type": "Organization",
+      "relation": "TARGETS",
+      "tail": "Cyber-attacks (increasingly)",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "Small to Medium Enterprises (SMEs) and their supply chains are increasingly becoming the target for cyber-attacks in Australia.",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "Australian SMBs",
+      "head_type": "Organization",
+      "relation": "RELATED_TO",
+      "tail": "Recognise cyber security is important",
+      "tail_type": "Other",
+      "supporting_sentence": "Australian SMBs know cyber security is important regardless of how they rate their level of cyber security understanding.",
+      "source_document": "2023_ACSC_Cyber Security and Australian Small Businesses Survey Results_D1.pdf"
+    },
+    {
+      "head": "Cyber risk",
+      "head_type": "Other",
+      "relation": "RELATED_TO",
+      "tail": "Operational risk",
+      "tail_type": "Other",
+      "supporting_sentence": "Cyber risk, despite its prominence and velocity, is still an operational risk that should fit within an SME’s existing approach to risk management.",
+      "source_document": "cyber-security-handbook-web.pdf"
+    },
+    {
+      "head": "ASD’s Essential Eight",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "ISO 27001",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "Prominent examples of such frameworks include the International Organisation for Standardisation (ISO) 27001... the NIST CSF... and the Australian Signals Directorate (ASD) Essential Eight.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Cybersecurity frameworks (NIST CSF, Essential Eight, ISO 27001)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "MITIGATES",
+      "tail": "SMBs not knowing where to start in the implementation of cybersecurity",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "This lack of familiarity with frameworks possibly explains why one of the top challenges to implementing good cybersecurity is “SMBs not knowing where to start in the implementation of cybersecurity”.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Cybersecurity legislation (NDB, APPs)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Targeted educational initiatives (for SMBs)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Implement targeted educational initiatives to increase SMBs’ understanding of cybersecurity legislation... with particular emphasis on legislation such as the NDB legislation and the Australian Privacy Principles.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "SMBs",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Lack of familiarity with relevant regulations and frameworks",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "SMBs also lacked familiarity with relevant regulations and frameworks.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "New funding for Operation Aquila",
+      "head_type": "Other",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Enhance the AFP’s offensive cyber capability to investigate and disrupt cybercrime activity",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "New funding for Operation Aquila will enhance the AFP’s offensive cyber capability to investigate and disrupt cybercrime activity.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "ASD’s Essential Eight",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "Zero trust (whole-of-government culture)",
+      "tail_type": "Other",
+      "supporting_sentence": "To protect the Australian Government’s data and digital estate, we will build on the best practice principles established within ASD’s Essential Eight... aiming to develop a whole-of-government zero trust culture.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Cyber Incident Management Arrangements",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Formally recognising businesses in government's incident response playbook",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The Australian Government will work with state and territory governments on formally recognising businesses in governments’ incident response playbook, known as the Cyber Incident Management Arrangements.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Australian Government",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Invest $62.3 million in a classified national situational awareness capability",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Through this Strategy, the Australian Government will invest $62.3 million in a classified national situational awareness capability to better enable government to understand and respond to cyber threats to critical infrastructure and other high priority networks.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "National Cyber Security Coordinator (Cyber Coordinator)",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Coordinating whole-of-government incident response efforts",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The National Cyber Security Coordinator (Cyber Coordinator) and the National Office of Cyber Security will coordinate whole-of-government incident response efforts.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Security of Critical Infrastructure Act 2018 (SOCI Act)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "APPLIES_TO",
+      "tail": "Critical infrastructure regulation",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "From regulation of critical infrastructure under the Security of Critical Infrastructure Act 2018 (the SOCI Act) to the protection of people, information and assets in the Australian Government under the Protective Security Policy Framework...",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "ASD’s limited use obligation",
+      "head_type": "PolicyOrRegulation",
+      "relation": "MITIGATES",
+      "tail": "Voluntarily provided information being used for regulatory purposes",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "Note, under ASD’s limited use obligation, information voluntarily provided to ASD about cybersecurity incidents, or potential cybersecurity incidents, cannot be used for regulatory purposes.",
+      "source_document": "Information security manual (June 2025).pdf"
+    },
+    {
+      "head": "Cybercrime",
+      "head_type": "ThreatOrAttack",
+      "relation": "LEADS_TO",
+      "tail": "Costing the economy up to $29 billion per year",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "cyber incidents targeting small, medium and large Australian businesses can cost the economy up to $29 billion per year, or 1.9% of Australia’s gross domestic product (GDP).",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "IT asset inventory",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Risk of unauthorised access and data breaches",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "The absence of an IT asset inventory hinders efficient management and protection of resources, increasing the risk of unauthorised access and data breaches.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "ASD",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "ASD Top 4 (guidelines)",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "With the Defence Industry Security Program (DISP), Australian Cyber Security Centre (ACSC), the Essential 8 and Australian Signals Directorate (ASD) Top 4 being just a portion of the governing bodies and information surrounding cyber security, SME’s reported confusion...",
+      "source_document": "SADILP-2019-Concept-paper-Cyber-Security-Report-FINAL.pdf"
+    },
+    {
+      "head": "Australian Government",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Supporting safe and responsible use of AI",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The Australian Government will support safe and responsible use of AI.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Centralisation of cyber security systems across government",
+      "head_type": "ControlOrMeasure",
+      "relation": "MITIGATES",
+      "tail": "Opportunities for malicious actors to target smaller agencies",
+      "tail_type": "ThreatOrAttack",
+      "supporting_sentence": "This centralisation seeks to reduce opportunities for malicious actors to target smaller agencies with less secure IT, and will increase opportunities to focus the Australian Government’s cyber security investment.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Cybersecurity awareness campaigns",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Partnerships with the private sector and civil society (to extend reach)",
+      "tail_type": "Organization",
+      "supporting_sentence": "Partnerships with the private sector and civil society will be critical to extend the reach of this national campaign and maintain consistent messaging.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Cyber security is a public good",
+      "head_type": "Other",
+      "relation": "LEADS_TO",
+      "tail": "Enforcement by those most capable of managing it",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Cyber security is a public good. By 2030, all Australians should feel protected by a secure and resilient digital economy. They should feel confident that cyber security will be enforced by those most capable of managing it across each layer of the technology supply chain.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "Australian Government",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Investing $1.35 billion Cyber Enhanced Situational Awareness and Response (CESAR) package",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "On 30 June 2020, the Australian Government announced the $1.35 billion Cyber Enhanced Situational Awareness and Response (CESAR) package.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Critical infrastructure regulation",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Inclusion of cyber security regulation into ‘all hazards’ requirements for aviation and maritime sectors",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The Government will explore options to incorporate cyber security regulation into ‘all hazards’ requirements for the aviation and maritime sectors.",
+      "source_document": "2023-cyber-security-strategy.pdf"
+    },
+    {
+      "head": "ASD’s ACSC Small Business Cyber Security Guide",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "Cyber security advice (for SMEs)",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "The ACSC Small Business Cyber Security Guide provides tailored advice to protect against the most common cyber security incidents.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Australian Government",
+      "head_type": "GovernmentBody",
+      "relation": "RESPONSIBLE_FOR",
+      "tail": "Co-designing supply chain principles for decision makers and suppliers",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "the Australian Government will co-design supply chain principles for decision makers and suppliers, to encourage security-by-design; transparency; and autonomy and integrity in investment, procurement and security.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Cybersecurity accreditation frameworks",
+      "head_type": "PolicyOrRegulation",
+      "relation": "RELATED_TO",
+      "tail": "Professional competency requirements",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "In the medium to longer term, this could involve exploring whether there is a need for cyber security accreditation frameworks... accompanied by professional competency requirements for maintaining accreditation.",
+      "source_document": "cyber-security-strategy-2020.pdf"
+    },
+    {
+      "head": "Cyber supply chain risk management",
+      "head_type": "ControlOrMeasure",
+      "relation": "REQUIRES",
+      "tail": "Conducted during the earliest possible stage of procurement",
+      "tail_type": "ControlOrMeasure",
+      "supporting_sentence": "Cyber supply chain risk management activities should be conducted during the earliest possible stage of procurement of operating systems, applications, information technology (IT) equipment...",
+      "source_document": "Information security manual (June 2025).pdf"
+    },
+    {
+      "head": "APT attacks (Advanced Persistent Threats)",
+      "head_type": "ThreatOrAttack",
+      "relation": "TARGETS",
+      "tail": "SMBs (undetected)",
+      "tail_type": "Organization",
+      "supporting_sentence": "This study also found that a significant number of SMBs lack cybersecurity monitoring tools and capabilities... leaving them vulnerable to undetected attacks, including Advanced Persistent Threats (APTs).",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Health Care and Social Assistance industry (SMBs)",
+      "head_type": "Organization",
+      "relation": "VULNERABILITY",
+      "tail": "Unaware of the NDB legislation (67%)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "In the Health Care and Social Assistance industry, a significant majority of SMBs (67%) were unaware of the NDB legislation despite it being applicable to them, highlighting a gap in awareness within an industry that handles sensitive personal and health-related data.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Lack of awareness (of NDB legislation)",
+      "head_type": "Vulnerability",
+      "relation": "LEADS_TO",
+      "tail": "Compliance risks",
+      "tail_type": "ImpactOrOutcome",
+      "supporting_sentence": "These findings suggest that a significant proportion of SMBs are not adequately informed about the legal requirements imposed on them, potentially exposing them to compliance risks.",
+      "source_document": "1-s2.0-S0167404824003316-main.pdf"
+    },
+    {
+      "head": "Small business cyber security checklist (ACSC)",
+      "head_type": "PolicyOrRegulation",
+      "relation": "REQUIRES",
+      "tail": "Implementation of Maturity Level One of the Essential Eight",
+      "tail_type": "PolicyOrRegulation",
+      "supporting_sentence": "After completing this checklist, we recommend small businesses implement Maturity Level One of the Essential Eight.",
+      "source_document": "Small business cyber security checklist (June 2023).pdf"
+    },
+    {
+      "head": "Transfer costs (CGT and stamp duty)",
+      "head_type": "Other",
+      "relation": "CAUSES",
+      "tail": "Inhibitor to restructuring (established business)",
+      "tail_type": "Vulnerability",
+      "supporting_sentence": "The results indicate that advisors considered transfer costs (CGT and stamp duty) as a frequently mentioned inhibitor to restructuring an established business; other factors were administrative costs and complexity of adopting multiple entities for the one business.",
+      "source_document": "16.pdf"
+    }
+  ]
+}

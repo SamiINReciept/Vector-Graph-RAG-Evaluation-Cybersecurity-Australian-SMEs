@@ -1,0 +1,86 @@
+Loaded test set with 30 questions from data/test_qas.csv
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████| 4/4 [01:55<00:00, 28.82s/it]
+
+=== Evaluating pipeline: vector_llama (vector) ===
+vector_llama: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 30/30 [01:04<00:00,  2.16s/it]
+Saved per-question results to results/vector_llama_raw.csv
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+METRICS for vector_llama -> METEOR: 0.0000, BERTScore F1: 0.8905, Cosine: 0.7826, Avg latency: 2.16s
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████| 3/3 [00:05<00:00,  1.77s/it]
+
+=== Evaluating pipeline: vector_mistral (vector) ===
+vector_mistral:   0%|                                                                                                | 0/30 [00:00<?, ?it/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+vector_mistral: 100%|███████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:31<00:00,  1.04s/it]
+vector_mistral: 100%|███████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:31<00:00,  1.04s/it]
+Saved per-question results to results/vector_mistral_raw.csv
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+METRICS for vector_mistral -> METEOR: 0.0000, BERTScore F1: 0.9152, Cosine: 0.8401, Avg latency: 1.04s
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████| 5/5 [00:15<00:00,  3.03s/it]
+
+=== Evaluating pipeline: vector_qwen (vector) ===
+vector_qwen: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 30/30 [02:15<00:00,  4.51s/it]
+Saved per-question results to results/vector_qwen_raw.csv
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+METRICS for vector_qwen -> METEOR: 0.0000, BERTScore F1: 0.8859, Cosine: 0.7972, Avg latency: 4.51s
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████| 4/4 [00:04<00:00,  1.18s/it]
+
+=== Evaluating pipeline: graph_llama (graph) ===
+graph_llama:  33%|██████████████████████████████                                                            | 10/30 [01:14<02:24,  7.25s/it][INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+graph_llama:  37%|█████████████████████████████████                                                         | 11/30 [01:22<02:22,  7.52s/it][INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+[INFO] No facts found even after relaxing. Using generic graph sample.
+graph_llama:  53%|████████████████████████████████████████████████
+ostic keyword search.
+[INFO] No facts found even after relaxing. Using generic graph sample.
+graph_llama:  67%|████████████████████████████████████████████████████████████                      graph_llama:  70%|██████████████████████graph_llama:  80%|████████████████████████████████████████████████████████████████████████                  | 24/30 [02:56<00:43,  7.22s/it][INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+graph_llama:  90%|█████████████████████████████████████████████████████████████████████████████████         | 27/30 [03:19<00:22,  7.46s/it]
+[INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+[INFO] No facts found even after relaxing. Using generic graph sample.
+graph_llama: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 30/30 [03:41<00:00,  7.38s/it]
+Saved per-question results to results/graph_llama_raw.csv
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Warning: Empty candidate sentence detected; setting raw BERTscores to 0.
+METRICS for graph_llama -> METEOR: 0.0000, BERTScore F1: 0.7572, Cosine: 0.5882, Avg latency: 7.38s
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████| 3/3 [00:02<00:00,  1.42it/s]
+
+=== Evaluating pipeline: graph_mistral (graph) ===
+graph_mistral:   0%|                                                                                                 | 0/30 [00:00<?, ?it/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+graph_mistral:  47%|█████████████████████████████████████████                                       graph_mistral:  50%|████████████████████████████████████████████                                    graph_mistral:  53%|██████████████████████████████████████████████▉                                         | 16/30 [01:18<01:10,  5.01s/it][INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+[INFO] No facts found even after relaxing. Using generic graph sample.
+graph_mistral:  57%|█████████████████████████████████████████████████▊                              graph_mistral:  60%|████████████████████████████████████████████████████▊                           graph_mistral:  63%|███████████████████████████████████████████████████████▋                        graph_mistral:  67%|██████████████████████████████████████████████████████████▋                     graph_mistral:  70%|█████████████████████████████████████████████████████████████▌                  graph_mistral:  73%|████████████████████████████████████████████████████████████████▌               graph_mistral:  77%|███████████████████████████████████████████████████████████████████▍            graph_mistral:  80%|██████████████████████████████████████████████████████████████████████▍                 | 24/30 [01:51<00:23,  3.85s/it][INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+graph_mistral:  83%|█████████████████████████████████████████████████████████████████████████▎              | 25/30 [01:57<00:22,  4.43s/it]graph_mistral:  90%|███████████████████████████████████████████████████████████████████████████████▏        | 27/30 [02:05<00:12,  4.21s/it][INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+graph_mistral: 100%|████████████████████████████████████████████████████████████████████████████████████████| 30/30 [02:16<00:00,  4.55s/it]
+Saved per-question results to results/graph_mistral_raw.csv
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+METRICS for graph_mistral -> METEOR: 0.0000, BERTScore F1: 0.8697, Cosine: 0.7133, Avg latency: 4.55s
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████| 5/5 [00:02<00:00,  1.98it/s]
+
+=== Evaluating pipeline: graph_qwen (graph) ===
+graph_qwen:  33%|██████████████████████████████▎                                                            | 10/30 [01:34<03:05,  9.30s/it][INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+graph_qwen:  37%|█████████████████████████████████▎                                                         | 11/30 [01:44<03:01,  9.57s/it][INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+[INFO] No facts found even after relaxing. Using generic graph sample.
+graph_qwen:  53%|████████████████████████████████████████████████▌                                          | 16/30 [02:31<02:10,  9.34s/it][INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+[INFO] No facts found even after relaxing. Using generic graph sample.
+graph_qwen:  80%|████████████████████████████████████████████████████████████████████████▊                  | 24/30 [03:46<00:55,  9.28s/it][INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+graph_qwen:  90%|█████████████████████████████████████████████████████████████████████████████████▉         | 27/30 [04:15<00:28,  9.54s/it][INFO] No facts with intent filter. Falling back to type-agnostic keyword search.
+graph_qwen: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 30/30 [04:43<00:00,  9.46s/it]
+Saved per-question results to results/graph_qwen_raw.csv
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+METRICS for graph_qwen -> METEOR: 0.0000, BERTScore F1: 0.8581, Cosine: 0.6837, Avg latency: 9.46s
+
+=== Summary over all pipelines ===
+      pipeline  meteor  bertscore_f1  cosine_sim  avg_latency_sec
+  vector_llama     0.0      0.890529    0.782562         2.164578
+vector_mistral     0.0      0.915244    0.840052         1.039318
+   vector_qwen     0.0      0.885923    0.797192         4.505635
+   graph_llama     0.0      0.757226    0.588193         7.378591
+ graph_mistral     0.0      0.869736    0.713260         4.548923
+    graph_qwen     0.0      0.858147    0.683718         9.462379
+
+Saved summary metrics to results/summary_metrics.csv

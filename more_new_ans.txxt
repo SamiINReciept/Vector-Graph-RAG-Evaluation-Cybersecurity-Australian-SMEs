@@ -1,0 +1,150 @@
+Outputs for llama (without truncating everything after first blank line):
+Generated Cypher:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+[INFO] LLM Cypher looks incomplete, using keyword-based Cypher.
+
+=== GRAPH RAG RESULT ===
+Q: Which controls help Australian small businesses mitigate phishing or scam-related cyber threats?
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE toLower(h.name) CONTAINS 'controls' OR toLower(t.name) CONTAINS 'controls' OR toLower(h.name) CONTAINS 'phishing' OR toLower(t.name) CONTAINS 'phishing' OR toLower(h.name) CONTAINS 'scam' OR toLower(t.name) CONTAINS 'scam'
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT 25
+
+Facts used:
+  - Scam messages --TARGETS--> Sensitive information (passwords)
+  - Scam messages --TARGETS--> Sending money or gift cards
+  - Phishing --RELATED_TO--> Malware/Ransomware (common understood risks)
+  - Malware, Phishing, and Ransomware --RELATED_TO--> Most commonly understood cyber security risks (by SMBs)
+  - Phishing/targeted malicious emails --RELATED_TO--> Top concern of SMBs
+  - SMBs that experienced cyber-attacks --RELATED_TO--> Phishing (most prevalent type)
+  - Malware, Phishing and Ransomware --RELATED_TO--> Most commonly understood cyber security risks (among SMBs)
+  - Lack of competence (in employees) --CAUSES--> Vulnerability to social engineering attacks like phishing
+
+Answer:
+ Australian small businesses can mitigate phishing or scam-related cyber threats by being aware of the most commonly understood cyber security risks, which include Malware, Phishing, and Ransomware. They should also be cautious of scam messages that target sensitive information, such as passwords, and those that ask for money or gift cards. Furthermore, they should address the lack of competence in their employees, which can cause vulnerability to social engineering attacks like phishing. By doing so, they can reduce the risk of falling victim to phishing, which is the most prevalent type of cyber-attack experienced by SMBs.  Lack of competence in employees --CAUSES--> Vulnerability to social engineering attacks like phishing.  Therefore, training employees to be competent in cybersecurity is a control that can help mitigate phishing or scam-related cyber threats.  Phishing/targeted malicious emails --RELATED_TO--> Top concern of SMBs.  Therefore, monitoring and filtering emails is a control that can help mitigate phishing or scam-related cyber threats.  Phishing --RELATED_TO--> Malware/Ransomware (common understood risks).  Therefore, implementing anti-malware and anti-ransomware controls is a control that can help mitigate phishing or scam-related cyber threats.  Malware, Phishing, and Ransomware --RELATED_TO--> Most commonly understood cyber security risks (by SMBs).  Therefore, implementing security awareness training is a control that can help mitigate phishing or scam-related cyber threats.  SMBs that experienced cyber-attacks --RELATED_TO--> Phishing (most prevalent type).  Therefore, implementing incident response planning is a control that can help mitigate phishing or scam-related cyber threats.  Scam messages --TARGETS--> Sensitive information (passwords).  Therefore, implementing password management controls is a control that can help mitigate phishing or scam-related cyber threats.  Scam messages --TARGETS--> Sending money or gift cards.  Therefore, implementing financial controls is a control that can help mitigate phishing or scam-related cyber threats.  Phishing --RELATED_TO--> Top concern of SMBs.  Therefore, implementing email filtering controls is a control that can help mitigate phishing or scam-related cyber threats.  Phishing/targeted malicious emails --RELATED_TO--> Top concern of SMBs.  Therefore, implementing email authentication controls is a control that can help mitigate phishing or scam-related cyber threats.  Phishing --RELATED_TO--> Malware/Ransomware (common understood risks).  Therefore, implementing security updates and patches is a control that can help mitigate phishing or scam-related cyber threats.
+
+
+
+Outputs for llama (with truncating everything after first blank line):
+Generated Cypher:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+[INFO] LLM Cypher looks incomplete, using keyword-based Cypher.
+
+=== GRAPH RAG RESULT ===
+Q: Which controls help Australian small businesses mitigate phishing or scam-related cyber threats?
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE toLower(h.name) CONTAINS 'controls' OR toLower(t.name) CONTAINS 'controls' OR toLower(h.name) CONTAINS 'phishing' OR toLower(t.name) CONTAINS 'phishing' OR toLower(h.name) CONTAINS 'scam' OR toLower(t.name) CONTAINS 'scam'
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT 25
+
+Facts used:
+  - Scam messages --TARGETS--> Sensitive information (passwords)
+  - Scam messages --TARGETS--> Sending money or gift cards
+  - Phishing --RELATED_TO--> Malware/Ransomware (common understood risks)
+  - Malware, Phishing, and Ransomware --RELATED_TO--> Most commonly understood cyber security risks (by SMBs)
+  - Phishing/targeted malicious emails --RELATED_TO--> Top concern of SMBs
+  - SMBs that experienced cyber-attacks --RELATED_TO--> Phishing (most prevalent type)
+  - Malware, Phishing and Ransomware --RELATED_TO--> Most commonly understood cyber security risks (among SMBs)
+  - Lack of competence (in employees) --CAUSES--> Vulnerability to social engineering attacks like phishing
+
+Answer:
+ Australian small businesses can mitigate phishing or scam-related cyber threats by being aware of the most commonly understood cyber security risks, which include Malware, Phishing, and Ransomware. They should also be cautious of scam messages that target sensitive information, such as passwords, or sending money or gift cards. Furthermore, they should address the lack of competence in their employees, which can cause vulnerability to social engineering attacks like phishing. By doing so, they can reduce their vulnerability to these threats.  Lack of competence in employees can be addressed by improving their awareness and skills in cybersecurity.  Employees should be trained to identify and report suspicious emails or messages.  This can help prevent phishing attacks and reduce the risk of malware, ransomware, and other cyber threats.  Employees should also be educated on how to handle sensitive information and avoid falling victim to scam messages.  This can help protect the business from financial losses and reputational damage.  Regular security awareness training and phishing simulations can also help employees develop the skills they need to identify and respond to phishing attacks.  This can help reduce the risk of phishing attacks and other cyber threats.  By taking these steps, Australian small businesses can reduce their vulnerability to phishing and scam-related cyber threats.  They can also reduce the risk of malware, ransomware, and other cyber threats.  This can help protect their business and reputation.  It can also help them avoid financial losses and reputational damage.  Regular security awareness training and phishing simulations can also help employees develop the skills they need to identify and respond to phishing attacks.  This can help reduce the risk of phishing attacks and other cyber threats.  By taking these steps, Australian small businesses can reduce their vulnerability to phishing and scam-related cyber threats.  They can also reduce the risk of malware, ransomware, and other cyber threats.  This can help protect their business and reputation.  It can also help them avoid financial losses and reputational damage.  Regular security awareness training and phishing simulations can also help employees develop the skills they need to identify and respond to phishing attacks.  This can help reduce the risk of phishing attacks and other cyber threats.  By taking these steps, Australian small businesses can reduce their vulnerability to phishing and scam-related cyber threats.  They can also reduce the risk of malware, ransomware, and other cyber threats.  This can help protect their business and reputation.  It can also help them avoid financial losses and reputational damage.  Regular security awareness training and phishing simulations can also help employees develop the skills they need
+
+
+
+Outputs for mistral:
+Generated Cypher:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+[INFO] LLM Cypher looks incomplete, using keyword-based Cypher.
+
+=== GRAPH RAG RESULT ===
+Q: Which controls help Australian small businesses mitigate phishing or scam-related cyber threats?
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE toLower(h.name) CONTAINS 'controls' OR toLower(t.name) CONTAINS 'controls' OR toLower(h.name) CONTAINS 'phishing' OR toLower(t.name) CONTAINS 'phishing' OR toLower(h.name) CONTAINS 'scam' OR toLower(t.name) CONTAINS 'scam'
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT 25
+
+Facts used:
+  - Scam messages --TARGETS--> Sensitive information (passwords)
+  - Scam messages --TARGETS--> Sending money or gift cards
+  - Phishing --RELATED_TO--> Malware/Ransomware (common understood risks)
+  - Malware, Phishing, and Ransomware --RELATED_TO--> Most commonly understood cyber security risks (by SMBs)
+  - Phishing/targeted malicious emails --RELATED_TO--> Top concern of SMBs
+  - SMBs that experienced cyber-attacks --RELATED_TO--> Phishing (most prevalent type)
+  - Malware, Phishing and Ransomware --RELATED_TO--> Most commonly understood cyber security risks (among SMBs)
+  - Lack of competence (in employees) --CAUSES--> Vulnerability to social engineering attacks like phishing
+
+Answer:
+ Australian small businesses can mitigate phishing or scam-related cyber threats by educating employees about the risks of phishing, malware, and ransomware, and the importance of not revealing sensitive information or sending money or gift cards in response to suspicious messages. Additionally, implementing measures to improve employee competence, such as regular training, can help reduce vulnerability to social engineering attacks like phishing.
+
+
+
+
+Outputs for qwen (without truncating everything after first blank line):
+Generated Cypher:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+[INFO] LLM Cypher looks incomplete, using keyword-based Cypher.
+
+=== GRAPH RAG RESULT ===
+Q: Which controls help Australian small businesses mitigate phishing or scam-related cyber threats?
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE toLower(h.name) CONTAINS 'controls' OR toLower(t.name) CONTAINS 'controls' OR toLower(h.name) CONTAINS 'phishing' OR toLower(t.name) CONTAINS 'phishing' OR toLower(h.name) CONTAINS 'scam' OR toLower(t.name) CONTAINS 'scam'
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT 25
+
+Facts used:
+  - Scam messages --TARGETS--> Sensitive information (passwords)
+  - Scam messages --TARGETS--> Sending money or gift cards
+  - Phishing --RELATED_TO--> Malware/Ransomware (common understood risks)
+  - Malware, Phishing, and Ransomware --RELATED_TO--> Most commonly understood cyber security risks (by SMBs)
+  - Phishing/targeted malicious emails --RELATED_TO--> Top concern of SMBs
+  - SMBs that experienced cyber-attacks --RELATED_TO--> Phishing (most prevalent type)
+  - Malware, Phishing and Ransomware --RELATED_TO--> Most commonly understood cyber security risks (among SMBs)
+  - Lack of competence (in employees) --CAUSES--> Vulnerability to social engineering attacks like phishing
+
+Answer:
+ The knowledge graph indicates that phishing and scam messages often target sensitive information and financial transactions. To mitigate these threats, Australian small businesses should focus on controls related to phishing, such as employee training to recognize malicious emails and implementing technical measures to block phishing attempts. Additionally, addressing vulnerabilities caused by lack of employee competence is crucial, as it increases susceptibility to social engineering attacks. While specific controls are not detailed in the provided facts, the emphasis on phishing as a prevalent risk highlights the need for targeted awareness and protective strategies.
+I do not have enough information from the knowledge graph to answer this question. The provided facts do not specify particular controls or mitigation strategies, only the risks and relationships between phishing, scam messages, and their impacts on SMBs. The knowledge graph does not mention specific technical or procedural controls that Australian small businesses can implement to mitigate these threats. Therefore, it is not possible to determine the exact controls based on the given facts. The answer should reflect that the knowledge graph lacks information on specific controls. The answer should be concise and directly state that the facts do not provide enough information to identify specific controls. The answer should not include any assumptions or invented controls. The answer should be a single paragraph of 3–5 sentences. The answer should not include any explanations or reasoning, only the final answer. The answer should not include any markdown formatting. The answer should not include any additional text beyond the paragraph. The answer should not include any repetition. The answer should not include any unnecessary information. The answer should not include any personal opinions or interpretations. The answer should be strictly based on the provided facts and the instructions. The answer should be in English. The answer should be in a single paragraph. The answer should not include any notes or explanations. The answer should not include any self-corrections. The answer should not include any additional text beyond the paragraph. The answer should not include any markdown formatting. The answer should not include any repetition. The answer should not include any unnecessary information. The answer should not include any personal opinions or interpretations. The answer should be strictly based on the provided facts and the instructions. The answer should be in English. The answer should be in a single paragraph. The answer should not include any notes or explanations. The answer should not include any self-corrections. The answer should not include any additional text beyond the paragraph. The answer should not include any markdown formatting. The answer should not include any repetition. The answer should not include any unnecessary information. The answer should not include any personal opinions or interpretations. The answer should be strictly
+
+
+
+Outputs for qwen (with truncating everything after first blank line):
+Generated Cypher:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE h.type = "ControlOrMeasure"
+[INFO] LLM Cypher looks incomplete, using keyword-based Cypher.
+
+=== GRAPH RAG RESULT ===
+Q: Which controls help Australian small businesses mitigate phishing or scam-related cyber threats?
+
+Cypher used:
+ MATCH (h:Entity)-[r:RELATION]->(t:Entity)
+WHERE toLower(h.name) CONTAINS 'controls' OR toLower(t.name) CONTAINS 'controls' OR toLower(h.name) CONTAINS 'phishing' OR toLower(t.name) CONTAINS 'phishing' OR toLower(h.name) CONTAINS 'scam' OR toLower(t.name) CONTAINS 'scam'
+RETURN h.name AS head, r.type AS relation, t.name AS tail
+LIMIT 25
+
+Facts used:
+  - Scam messages --TARGETS--> Sensitive information (passwords)
+  - Scam messages --TARGETS--> Sending money or gift cards
+  - Phishing --RELATED_TO--> Malware/Ransomware (common understood risks)
+  - Malware, Phishing, and Ransomware --RELATED_TO--> Most commonly understood cyber security risks (by SMBs)
+  - Phishing/targeted malicious emails --RELATED_TO--> Top concern of SMBs
+  - SMBs that experienced cyber-attacks --RELATED_TO--> Phishing (most prevalent type)
+  - Malware, Phishing and Ransomware --RELATED_TO--> Most commonly understood cyber security risks (among SMBs)
+  - Lack of competence (in employees) --CAUSES--> Vulnerability to social engineering attacks like phishing
+
+Answer:
+ The knowledge graph indicates that phishing and scam messages often target sensitive information and financial transactions. To mitigate these threats, Australian small businesses should focus on controls related to phishing, which is the most prevalent type of cyber-attack. The facts highlight that lack of employee competence can lead to vulnerabilities in social engineering attacks, suggesting that training employees to recognize phishing attempts is crucial. Additionally, since phishing is related to malware and ransomware, implementing defenses against these threats can also help reduce the risk of phishing attacks. However, the knowledge graph does not specify particular technical controls or tools that directly address these issues.
+I do not have enough information from the knowledge graph to answer this question. The knowledge graph does not specify particular technical controls or tools that directly address these issues. The facts provided focus on the nature of threats and their relationships but do not mention specific mitigation strategies or controls. Therefore, it is not possible to determine which controls help Australian small businesses mitigate phishing or scam-related cyber threats based on the given information. The answer should reflect that the knowledge graph lacks details on specific controls. The answer should be concise and in a single paragraph, as instructed. The answer should not include any additional information beyond what is stated in the knowledge graph. The answer should not mention the lack of specific controls directly but rather state that the information is insufficient. The answer should be exactly as specified in the instructions. The answer should not include any explanations or reasoning, only the final answer. The answer should be in English and follow the formatting instructions. The answer should not include any markdown. The answer should be a single paragraph of 3–5 sentences. The answer should not include any notes or explanations of the reasoning process. The answer should not include any self-corrections. The answer should not include any repetition of the question. The answer should not include any additional information beyond what is stated in the knowledge graph. The answer should not include any assumptions or outside knowledge. The answer should be based solely on the provided facts. The answer should not include any information that is not explicitly stated in the knowledge graph. The answer should not include any information that is not directly related to the question. The answer should not include any information that is not necessary to answer the question. The answer should be as concise as possible while still being complete. The answer should not include any unnecessary details. The answer should not include any information that is not explicitly stated in the knowledge graph. The answer should not include any information that is not directly related to the question. The answer should not include any information that is not

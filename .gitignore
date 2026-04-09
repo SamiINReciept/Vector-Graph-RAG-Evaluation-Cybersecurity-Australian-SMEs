@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+venv/
+.venv/
+
+# Data (large files / generated)
+data/corpus.pkl
+data/kg_nodes.pkl
+data/kg_edges.pkl
+data/vector_store/
+data/pdfs/
+
+# Generated visualizations
+graph.html
+kg_hairball.jpg
+kg_zoom.jpg
+kg_composite.jpg
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Misc
+*.pyc
